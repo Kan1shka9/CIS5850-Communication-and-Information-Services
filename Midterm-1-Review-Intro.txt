@@ -442,4 +442,93 @@ Telephone  -> 11,025 Hz -> 8 bits  -> mono
 
 6. What is meant by a raw file, compressed file and streaming file formats? Give examples in each case for audio and video recordings.
 
+RAW file
+A file that contains data that have not been compressed, encrypted or processed in any manner.
+
+Compressed file
+Compression is a reduction in the number of bits needed to represent data. Compressing data can save storage capacity, speed file transfer, and decrease costs for storage hardware and network bandwidth.
+
+Streaming file
+Streamed audio is also compressed. It is also designed for real-time delivery of audio.
+
 ----------------------------------
+
+7. What is the significance of the new media format known as .mp4?
+
+MPEG-4 -> Moving Picture Experts Group
+MP4
+
+Digital multimedia container format most commonly used to store video and audio.
+It allows streaming over the Internet. 
+
+----------------------------------
+
+Digitization of Image
+
+-----------------------------------------------------------------------
+
+1. What is a pixel? How is a screen resolution stated?
+
+- The pixel (a word invented from "picture element") is the basic unit of programmable color on a computer display or in a computer image.
+- Number of pixels on the horizontal axis to Number of pixels on the vertical axis
+
+    - Horizontal resolution
+        - Number of horizontal pixels
+    - Vertical resolution
+        - Number of vertical pixels
+    - Image resolution
+        - Horizontal by vertical resolution
+    - 640 by 480
+
+----------------------------------
+
+2. How are screen images digitized?
+
+- Divide the image into a grid of pixels that may be considered as the sampling points of the image
+- Digitize information on each pixel
+- Store and transmit
+
+----------------------------------
+
+3. Give the number of bits that are required to represent 16 colors.
+
+2 ^ 4 bits = 16 colors
+4 bits
+
+----------------------------------
+
+4. Consider a screen resolution of 16X16. If 8 different colors are to be represented, how much storage is required for one screen image?
+
+2 ^ 3 bits = 8 colors
+16 * 16 * 3 = 768 bits / 8 = 96 bytes
+
+----------------------------------
+
+5. What is meant by color depth? How is it expressed?
+
+Color depth
+Number of bits used for a single pixel
+A 24-bit video adapter, for example, has a color depth of 2 to the 24th power (about 16.7 million) colors. One would say that its color depth is 24 bits.
+
+----------------------------------
+
+6. Name some of the compressed file formats for image. Which of these formats are used extensive on the web?
+
+GIF
+MIC - Microsoft Image Composer
+PCD - KODAK
+JPEG
+
+----------------------------------
+
+7. What are some of the features of a .jpg image?
+
+Digital camera can save images in the JPEG/JFIF format, which supports eight-bit grayscale images and 24-bit color images (eight bits each for red, green, and blue). 
+JPEG applies lossy compression to images, which can result in a significant reduction of the file size. 
+Applications can determine the degree of compression to apply, and the amount of compression affects the visual quality of the result.
+
+----------------------------------
+
+Digitization of Video 
+
+-----------------------------------------------------------------------
