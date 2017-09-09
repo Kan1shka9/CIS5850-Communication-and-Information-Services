@@ -391,3 +391,55 @@ Digitization of Audio
 -----------------------------------------------------------------------
 
 1. Describe the process of digitizing audio. Address the two stage digitization process, the first that involves digitization and the second that converts digitized signals into binary digital signals.
+
+- Take samples of audio at pre-determined time intervals known as the sampling rate 
+- Represent the sampled audio with digital signals
+    - Pulse Amplitude Modulation (PAM)
+- Encode signals into binary code
+    - Pulse Code Modulation (PCM) that incorporates PAM as well
+    - Required for computer processing
+    
+Sampling
+Analog to Digital using PAM
+Encode into binary using PCM
+
+----------------------------------
+
+2. Explain the terms, sampling frequency, sampling depth and the channels. 
+
+Sampling frequency
+Number of samples per second
+
+Sampling depth
+Number of bits of information in each sample
+
+Channel
+Mono or stereo
+
+----------------------------------
+
+3. How many different amplitudes can be represented by a sampling depth of 3 bits?
+
+4 * 3 = 12 amplitudes
+
+Doubt
+
+----------------------------------
+
+4. What is the frequency at which voice should be sampled and why?
+
+Voice signal is sampled at 8000 Hz so that frequencies up to 4000 Hz can be recorded.
+
+----------------------------------
+
+5. Give the settings for different types of audio recordings. Examples should include CD quality audio, normal voice quality audio and telephone quality audio.
+
+CD         -> 44 Hz     -> 16 bits -> stereo
+Voice      -> 22,050 Hz -> 8 bits  -> mono
+Telephone  -> 11,025 Hz -> 8 bits  -> mono
+
+----------------------------------
+
+6. What is meant by a raw file, compressed file and streaming file formats? Give examples in each case for audio and video recordings.
+
+----------------------------------
