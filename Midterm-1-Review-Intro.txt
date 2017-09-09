@@ -230,3 +230,164 @@ Introduction to Analog and Digital Technologies
 -----------------------------------------------------------------------
 
 1. Draw a typical analog and a digital signal. Explain the difference between the two.
+
+Analog signal -------Modem-------> Digital Signal
+
+Digital Signal
+    - Binary Values
+    - Easy
+    - Reliable
+    - Few errors
+    - Fast Transmsission
+    - Better productivity
+    
+Analog signal
+    - Replicas of sound waves
+    - Distorted with noise
+    - Drop quality of transmission
+    
+<See image>
+    
+----------------------------------
+    
+2. Explain the terms, Frequency, Amplitude and Cycle. What is meant by Hz?
+
+Frequency
+Cycles per second
+
+Amplitude
+Distance above the reference line
+
+Cycle
+One complete wave
+
+Hertz
+Unit to express frequency
+
+----------------------------------
+
+3. How does wavelength relate to frequency?
+
+- Wavelength inversely proportional to Frequency
+- Higher the frequency shorter the wavelength
+
+----------------------------------
+
+4. Compute the wavelength of an analog signal of frequency 2 Hz.
+
+Wavelength = 1/Frequency
+           = 1/2 seconds
+           
+Doubt
+
+----------------------------------
+
+5. What is a Frequency Spectrum? Who controls the usage of frequencies?
+
+Available range of frequencies for communication
+The International Telecommunication Union (ITU), IEEE
+
+----------------------------------
+
+6. Explain the behavioral aspect of low frequency communication and very high frequency communication.
+
+Low frequency  -> Voice
+Mid frequency  -> Microwave
+High frequency -> Satellite Communication
+
+Low frequency  -> Omnidirectional
+High frequency -> Unidirectional
+
+----------------------------------
+
+7. Describe the terms unidirectional and omnidirectional communication. 
+
+Unidirectional
+Moving or operating in a single direction
+
+Omnidirectional
+Receiving signals from or transmitting in all directions.
+
+----------------------------------
+
+8. List some of the communication applications at the lower and upper end of the frequency spectrum.
+
+Low frequency  -> Voice
+Mid frequency  -> Microwave
+High frequency -> Satellite Communication
+
+----------------------------------
+
+9. Who controls the assignment of frequencies from the Frequency Spectrum?
+The International Telecommunication Union (ITU), IEEE
+
+----------------------------------
+
+10. What is the technical definition of bandwidth?
+Range of frequencies
+
+----------------------------------
+
+11. Explain the satellite types, GEO, MEO and LEO. Which one of these is in widespread use?
+
+GEO
+Geostationary Satellite 
+This satellite remains stationary relative to point on earth, few satellites needed for global coverage, transmission delay, most expensive satellite, and longest orbital life. 
+Used for TV signals.
+
+MEO
+Medium Earth Orbit Satellite 
+Satellites move relative to point on earth, moderate number needed for global coverage, require medium-powered transmitters, negligible transmission delay, less expensive, and moderate orbital life (6-12 yrs). 
+Used for GPS.
+
+LEO
+Low Earth Orbit
+This satellite moves rapidly relative to point on earth, large number needed for global coverage, require only low-power transmitters, negligible transmission delay, least expensive, and shortest orbit life (as low as 5 yrs). 
+Used for telephones.
+
+----------------------------------
+
+12. Give the technical definition of bandwidth. List the term or terms used for expressing bandwidth.
+Range of frequencies
+
+Digital devices -> the bandwidth is usually expressed in bits per second(bps) or bytes per second
+Analog devices -> the bandwidth is expressed in cycles per second, or Hertz (Hz)
+
+----------------------------------
+
+Digitization of Data
+
+-----------------------------------------------------------------------
+
+1. Explain the purpose of the coding standards known as EBCDIC, ASCII and UNICODE.
+
+EBCDIC
+Extended Binary Coded Decimal Interchange Code 
+Character encoding schemes
+8 bits per character
+
+ASCII
+American Standard Code for Information Interchange
+Character encoding schemes
+7 bits per character 
+
+UNICODE
+16 bits per character
+65536 variations in UNICODE
+
+----------------------------------
+
+2. What are the advantages of using UNICODE.
+
+- Binary coded transmission
+- 18 different languages
+- Requires less bandwidth for transmission
+- Universal usability of software in all supported languages
+
+----------------------------------
+
+Digitization of Audio
+
+-----------------------------------------------------------------------
+
+1. Describe the process of digitizing audio. Address the two stage digitization process, the first that involves digitization and the second that converts digitized signals into binary digital signals.
