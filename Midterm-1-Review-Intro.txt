@@ -1,0 +1,232 @@
+Midterm 1 Review Intro
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Communication Trends and Applications
+
+-----------------------------------------------------------------------
+
+1. Compare data communication in the past with information communication at present.
+
+Past
+Data Communication
+Alphanumeric data
+Mainframe based communication
+Analog
+Intranet, Extranet
+
+Present
+Information Communication
+Image, Audio, Video Data
+Microcomputer based communication
+Digital
+Intranet, Extranet, Internet
+
+----------------------------------
+
+2. What is a VPN? How does VPN differ from a https:// session?
+
+A virtual private network (VPN) is a technology that creates a safe and encrypted connection over a less secure network, such as the internet.
+VPN encrypts all traffic but a HTTPS session will encrypt only web based traffic.
+
+----------------------------------
+
+3. Explain the terms Intranet, Extranet and Internet. Where does GET fall within these three network architectures.
+
+Intranet
+Internet restricted to companies own network
+
+Extranet
+Intranet extended to include outside organizations
+
+Internet
+Global system of interconnected computer networks.
+
+GET is a HTTP method, hence it is used in web communication and can be used in all 3 networks.
+
+----------------------------------
+
+4. Name a hardware based certification and a largely software based certification for networking. 
+
+hardware based certification -> CompTIA A+
+software based certification -> Cisco CCNA
+
+----------------------------------
+
+5. How is access to resources established from a client outside of the organization in the case of Extranet?
+
+Doubt
+
+----------------------------------
+
+6. What are some of the factors that contributed to the growth of the Internet?
+
+- Emergence of microcomputers
+- Fast access technologies
+- Digitization of telecommunication lines
+- Cheaper hardware
+- Better transmission technologies
+
+----------------------------------
+
+7. Name some emerging trends in IT.
+
+- IoT and Smart Home Tech
+- Augmented Reality (AR) and Virtual Reality (VR)
+- Machine Learning
+- Automation
+- Humanized Big Data
+- Physical-Digital Integrations
+- Everything On-Demand
+
+----------------------------------
+
+8. Define the term SaaS, PaaS and IaaS. -> IPS
+
+https://stackoverflow.com/questions/16820336/what-is-saas-paas-and-iaas-with-examples
+
+IAAS (Infrastructure As A Service)
+The base layer
+Deals with Virtual Machines, Storage (Hard Disks), Servers, Network, Load Balancers etc
+
+PAAS (Platform As A Service)
+A layer on top of IAAS
+Runtimes (like java runtimes), Databases (like mySql, Oracle), Web Servers (tomcat etc)
+
+SAAS (Software As A Service)
+A layer on top on PAAS
+Applications like email (Gmail, Yahoo mail etc), Social Networking sites (Facebook etc)
+
+----------------------------------
+
+9. What is the role played by digital technology in today's computer and voice communication?
+
+Doubt
+
+Digitization of all forms of information has made storage, retrieval and transmission of data efficient
+
+----------------------------------
+
+10. Explain the basic components of the mainframe computing architecture. How does it compare with today's cloud architecture?
+
+Doubt
+
+Slide 31
+
+----------------------------------
+
+11. Give some examples of virtualization? Can servers be virtualized? What are some of the technologies used in virtualization? An example is the Hyper-V virtualization technology.
+
+- Virtualization is the process of creating a software-based (or virtual) representation of something rather than a physical one. Virtualization can apply to applications, servers, storage, and networks and is the single most effective way to reduce IT expenses while boosting efficiency and agility for all size businesses.
+- Examples of virtualization
+    - Vmware Workstation
+    - VirtualBox
+    - Xen
+    - Parallels Desktop
+    - QEMU
+- Yes, servers be virtualized
+
+----------------------------------
+
+12. Define the term WAN. Name some WAN access and backbone technologies.
+
+Wide Area Network is a computer network that extends over a large geographical distance.
+
+Doubt
+
+----------------------------------
+
+13. Name some operating systems that support the configuration of a peer-to-peer network.
+
+- Macintosh OS X
+- Microsoft Windows Server
+- UNIX/Linux
+
+----------------------------------
+
+14. What is cloud computing? What are the three basic cloud computing architectures? Where does Google Sites fall within these three architectures?
+
+- Cloud Computing is the practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer.
+- 3 basic cloud computing architectures
+    - Infrastructure as a service (IaaS)
+    - Platform as a service (PaaS)
+    - Software as a service (SaaS)
+- Google Sites - PaaS / SaaS - Doubt
+
+----------------------------------
+
+15. Explain the terms, private, public and hybrid clouds.
+
+- Public Cloud
+    - A public cloud is basically the internet.
+- Private Cloud
+    - Private clouds are data center architectures owned by a single company that provides flexibility, scalability, provisioning, automation and monitoring.
+- Hybrid Clouds
+    - Hybrid cloud is a cloud computing environment which uses a mix of on-premises, private cloud and third-party, public cloud services with orchestration between the two platforms. By allowing workloads to move between private and public clouds as computing needs and costs change, hybrid cloud gives businesses greater flexibility and more data deployment options. 
+    Eg - an organization may run an application primarily in its private cloud, but tap into public cloud resources during periods of peak demand. Or it may run an application primarily in a public cloud environment while keeping some data relating to that application in its private cloud for compliance reasons.
+
+----------------------------------
+
+16. Name different ways of safeguarding the data in cloud computing.
+
+- Avoid storing sensitive information in the cloud
+– Read the user agreement to find out how your cloud service storage works
+– Strong passwords
+– Encrypt
+– Use an encrypted cloud service
+
+----------------------------------
+
+17. What is SharePoint? Name some of its uses.
+
+- SharePoint is a web-based, collaborative platform that integrates with Microsoft Office. Launched in 2001, SharePoint is primarily sold as a document management and storage system, but the product is highly configurable and usage varies substantially between organizations.
+- Uses
+    1. Enterprise Content and Document Management
+    2. Intranet and Social Network
+    3. Collaborative Software
+    4. File Hosting Service (Personal Cloud)
+    5. Custom Web Applications
+    
+----------------------------------
+
+18. Describe the similarity between today's cloud computing architecture and yesterday's mainframe architecture. What are some of their implications?
+
+Similarity
+    - Client Server Technology
+    - Thin Client
+    
+Doubt
+
+----------------------------------
+
+19. Name some cloud storage providers and services.
+
+- Apple iCloud
+- Google Drive
+- Microsoft OneDrive
+- Dropbox
+- Box
+
+----------------------------------
+
+20. What is meant by asymmetric and symmetric speeds with respect to an Internet ramp? Provide examples of applications that would require a symmetric Internet connection. 
+
+- Symmetric network
+Devices can transmit and receive data at equal rates.
+Symmetrical bandwidth has the same upload and download speed and is much more aligned to business usage.
+Symmetrical is "full duplex" and you can be downloading and uploading simultaneously without experiencing slow service.
+
+- Asymmetric networks 
+Support disproportionately more bandwidth in one direction than the other.
+Asymmetrical networks can be useful when much more data needs to be downloaded and minimal requests are sent up, as you might see with typical residential Internet browsing.
+
+- Examples of applications that would require a symmetric Internet connection. 
+Real-time applications - Microsoft Office365, VPN, VoIP, video conferencing, web conferencing, and/or you have a need for large file transfers, you will benefit from high speeds in both directions and should consider symmetrical bandwidth
+
+----------------------------------
+
+Introduction to Analog and Digital Technologies
+
+-----------------------------------------------------------------------
+
+1. Draw a typical analog and a digital signal. Explain the difference between the two.
