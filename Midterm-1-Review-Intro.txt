@@ -1094,3 +1094,33 @@ ATND
 
 4. Draw a data packet and mark its components. Hint: Receiver's address would be one of the components. 
 
+- Synchronization Information
+- Receivers Address
+- Senders Address
+- Data
+- Control Data
+- Error Correction Protocol
+
+----------------------------------
+
+5. List the IEEE standards that are applicable to the lower layer communication in the case of LANs. Examples include IEEE 802.3.
+
+802 Data link and physical layers
+    - 802.1 Internetworking
+    - 802.2 Logical Link Control (LLC)
+    - 802.3 CSMA/CD
+    - 802.4 Token Bus LAN
+
+----------------------------------
+
+6. Name some of the lower-layer operations.
+
+Data Link layer - MAC address - Frame
+Network layer - Source and Destination IP - Packet
+Transport layer - TCP or UDP
+Application layer - Application Specific Message
+                        - Web page in case of HTTP
+                        
+----------------------------------
+ 
+
