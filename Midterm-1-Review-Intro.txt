@@ -532,3 +532,164 @@ Applications can determine the degree of compression to apply, and the amount of
 Digitization of Video 
 
 -----------------------------------------------------------------------
+
+1. Name some of the video file formats?
+
+    - AVI (Audio Video Interleave)
+    - FLV (Flash Video Format)
+    - WMV (Windows Media Video)
+    - MOV (Apple QuickTime Movie)
+    - MP4 (Moving Pictures Expert Group 4)
+    
+----------------------------------
+
+2. Explain the different between a compressed file format and a streaming file format.
+
+----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Electronic and Optical Transmission
+
+-----------------------------------------------------------------------
+
+1. How is information represented using electronic signals and how is the same represented using optical signals?
+
+Electronic signals
+
+Square waves are coded based on voltages to represent either 1 or 0
+Code and generate electronic signals
+Receive and decode electronic signals
+Both points operate under the same rules and guidelines for effective communication.
+
+Optical signals
+
+Pulses of different wave lengths (frequency) are used for representing 0s and 1s.
+
+----------------------------------
+
+2. What is the biggest advantage of fiber optics transmission. How does is differ from electrical transmission? Refer to electro-magnetic interference while answering this question. 
+
+- Immunity to Electromagnetic interference
+- Data Security
+- Ease of installation
+- High bandwidth over long distance
+
+----------------------------------
+
+3. Explain the term TCP/IP. Name some of the protocols that are part of the TCP/IP suite of protocols.
+
+- TCP/IP
+	- Transmission Control Protocol/Internet Protocol
+	- De facto protocol of the Internet
+	- TCP/IP is a suite of protocols
+- Some examples of protocols in the TCP/IP stack
+	- SMTP, POP3, FTP, HTTP, Telnet
+    
+----------------------------------
+
+4. What is the relationship between wavelength and frequency in light signals?
+
+- Wave length is inversely proportional to frequency
+	- Wave length = 1/Frequency
+- Higher the frequency, the shorter the wave length
+
+----------------------------------
+
+5. How does light travel along a fiber?
+
+Light bounces and travels along the path of the fiber
+
+----------------------------------
+
+6. Explain the following terms: multimode, multimode graded and single mode transmission in fiber optics.
+
+- Multimode Step Index
+	- Lower speed optical transmission
+- Multimode Graded Index
+	- Intermediate speeds of transmission
+- Single Mode
+	- Higher speed in transmission
+    
+----------------------------------
+
+7. List the materials that could be used for making optical fibers. How does the purity of fibers affect the transmission of optical signals? Relate single mode transmission to the quality of fiber cables.
+
+- Core
+	- An inner cylinder with high refractive index
+- Cladding
+	- A middle cylinder with a lower refractive index
+- Jacket
+	- An outer protective polymer layer (usually polyurethane or PVC)
+    
+----------------------------------
+
+8. Name some of the common uses of fiber optic transmission.
+
+- Extending the distance between two communication points - Line drivers
+- Telecommunications - Long distance telephone trunks
+- Large-scale network backbones - FDDI
+- Internetworking - Connection between switches
+- Internet ramp
+
+----------------------------------
+
+9. What is the device that is used for the conversion of optical signals into electrical signals and vise-versa
+
+Optical ---Photo Electric Cells---> Electronic
+Electronic ---LED--->Optical
+
+----------------------------------
+
+10. Name some of the typical fiber cable connectors and their uses. Examples include ST connectors and SC connectors. 
+
+- Straight Tip connector
+	- A fiber-optic cable connector that uses a bayonet plug and socket. It was the first de facto standard connector for most commercial wiring. For bi-directional transmission, two fiber cables and two ST connectors are used.
+- Standard Connector, Subscriber Connector
+	- A fiber-optic cable connector that uses a push-pull latching mechanism similar to common audio and video cables. For bi-directional transmission, two fiber cables and two SC connectors (Dual SC) are used. SC is specified by the TIA as FOCIS-3.
+
+----------------------------------
+
+11. Explain the terms TX and RX with respect to fiber communication.
+
+TX - Transmitting connection
+RX - Receiveing connection
+
+----------------------------------
+
+12. Describe the following fiber optic applications:  a. SAN b. NAS c. FDDI d. OC circuits or ramps
+
+- SAN 
+Storage Area Network
+SAN is a dedicated network of storage devices (can include tape drives storages, raid disk arrays etc) all working together to provide an excellent block level storage
+
+- NAS
+Network-attached storage
+NAS is a single device/server/computing appliance, sharing its own storage over the network.
+
+- FDDI
+Fiber Distributed Data Interface
+Based on token ring protocol
+Set of ANSI and ISO standards for data transmission 
+Extend in range up to 200 km
+
+- OC circuits or ramps
+Optical Carrier is the standard unit of measure for the rate of transmission bandwidth for data being carried by Synchronous Optical Networking (SONET) fiber-optic networks.
+
+----------------------------------
+
+
