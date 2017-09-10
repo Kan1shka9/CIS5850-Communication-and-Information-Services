@@ -958,7 +958,79 @@ https://www.howtogeek.com/214185/beginner-geek-how-to-pair-devices-over-bluetoot
 
 ----------------------------------
 
+Multiplexing
 
+-----------------------------------------------------------------------
 
+1. Explain the difference between direct and inverse multiplexing.
 
+- Direct multiplexing
+    - same as channel splitting
+    - It means the splitting of one physical line into multiple communication channels
+    - A communication channel is one that engages in a communication session
+    - Maximize the economical use of cables
 
+- Inverse multiplexing
+    - Combination of multiple transmission lines or multiple communication channels to support a single communication session
+    - Binding of multiple transmission lines for the purpose of engaging in a single communication session
+    - Inverse multiplexing is also known as bonding when it is done dynamically
+    - Bonding is normally carried out dynamically
+    - Increase the communication speed of a single communication session
+ 	- Example - modem and ISDN transmission, ATM , Video Conferencing, T1
+
+----------------------------------
+
+2. Describe the following multiplexing techniques: Time Division Multiplexing (TDM), Frequency Division Multiplexing (FDM) and Statistical Time Division Multiplexing (STDM).
+
+TDM
+    - Time division simply allows a fixed period of time for communication for each channel 
+    - Each channel is assigned a fixed period of time for transmission
+    - The opportunity to transmit is given on a round-robin basis
+    - Time division multiplexers can therefore processes the information in digital form
+    - A modem is only required to connect a multiplexer to an analog line
+
+FDM
+    - Channel division is based on frequency.
+    - Each channel is assigned A different frequency (Half-duplex Example)
+    
+STDM
+    - STDM is similar to TDM except for one difference
+    - A time slice may be shortened due to the absence of data for transmission
+    - Each channel is initially assigned a fixed period of time
+    - The time period is forfeited in part or in full if there is no data to be transmitted  
+    - Obviously, STDM is more efficient than TDM
+
+----------------------------------
+
+3. Explain the terms, communication line, communication channel and communication session. Describe these three terms using the home internet connection as an example.
+
+Communication line
+    - physical medium that carries the information
+        - Coaxial cable
+
+Communication channel
+    - Conduit for the flow of information
+    - Multiple channels in physical medium
+
+Communication session
+    - Actual process of engaging in a communication task
+
+----------------------------------
+
+4. What are the multiplexing techniques used in optical transmission?
+
+Wavelength Division Multiplexing - WDM
+Time Division Multiplexing - TDM
+
+----------------------------------
+
+5. Name the multiplexing techniques used in electrical transmission. 
+
+Frequency division multiplexing - FDM
+Time division multiplexing - TDM
+
+----------------------------------
+
+ISO/OSI Model 
+
+-----------------------------------------------------------------------
