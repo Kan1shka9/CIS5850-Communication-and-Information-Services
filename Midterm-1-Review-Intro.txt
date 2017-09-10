@@ -658,9 +658,13 @@ Electronic ---LED--->Optical
 10. Name some of the typical fiber cable connectors and their uses. Examples include ST connectors and SC connectors. 
 
 - Straight Tip connector
-	- A fiber-optic cable connector that uses a bayonet plug and socket. It was the first de facto standard connector for most commercial wiring. For bi-directional transmission, two fiber cables and two ST connectors are used.
+	- A fiber-optic cable connector that uses a bayonet plug and socket. 
+    - It was the first de facto standard connector for most commercial wiring. 
+    - For bi-directional transmission, two fiber cables and two ST connectors are used.
 - Standard Connector, Subscriber Connector
-	- A fiber-optic cable connector that uses a push-pull latching mechanism similar to common audio and video cables. For bi-directional transmission, two fiber cables and two SC connectors (Dual SC) are used. SC is specified by the TIA as FOCIS-3.
+	- A fiber-optic cable connector that uses a push-pull latching mechanism similar to common audio and video cables. 
+    - For bi-directional transmission, two fiber cables and two SC connectors (Dual SC) are used. 
+    - SC is specified by the TIA as FOCIS-3.
 
 ----------------------------------
 
@@ -671,7 +675,7 @@ RX - Receiveing connection
 
 ----------------------------------
 
-12. Describe the following fiber optic applications:  a. SAN b. NAS c. FDDI d. OC circuits or ramps
+12. Describe the following fiber optic applications: a. SAN b. NAS c. FDDI d. OC circuits or ramps
 
 - SAN 
 Storage Area Network
@@ -683,9 +687,8 @@ NAS is a single device/server/computing appliance, sharing its own storage over 
 
 - FDDI
 Fiber Distributed Data Interface
+Set of ANSI and ISO standards for data transmission on fiber optic lines in a local area network (LAN) that can extend in range up to 200 km (124 miles). 
 Based on token ring protocol
-Set of ANSI and ISO standards for data transmission 
-Extend in range up to 200 km
 
 - OC circuits or ramps
 Optical Carrier is the standard unit of measure for the rate of transmission bandwidth for data being carried by Synchronous Optical Networking (SONET) fiber-optic networks.
