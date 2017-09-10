@@ -881,6 +881,7 @@ Serial transmission
 ----------------------------------
 
 3. Is USB a bus technology?
+Universal Serial Bus
 Yes
 
 ----------------------------------
@@ -901,7 +902,7 @@ Active Hub
 
 5. What is the general procedure for connecting and configuring USB peripherals if they do not support plug-and-play? 
 
-Doubt
+https://support.hp.com/us-en/document/c03327635
 
 ----------------------------------
 
@@ -953,7 +954,7 @@ Can also connect USB and FireWire peripherals via Thunderbolt, as long as you ha
 
 10. Explain the procedure that needs to be followed to connect a Bluetooth device to a computer.
 
-Doubt
+https://www.howtogeek.com/214185/beginner-geek-how-to-pair-devices-over-bluetooth/
 
 ----------------------------------
 
