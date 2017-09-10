@@ -1034,3 +1034,63 @@ Time division multiplexing - TDM
 ISO/OSI Model 
 
 -----------------------------------------------------------------------
+
+1. Name the layers in the TCP/IP model and the ISO/OSI model.
+
+- ISO/OSI model
+
+     End System                      End System
+
+     +-------+                       +-------+
+     |   7   |                       |   7   |     Application Layer
+     +-------+                       +-------+
+     |   6   |                       |   6   |     Presentation Layer
+     +-------+                       +-------+
+     |   5   |      Intermediate     |   5   |     Session Layer
+     +-------+         System        +-------+
+     |   4   |                       |   4   |     Transport Layer
+     +-------+     +-----------+     +-------+
+     |   3   |     |     3     |     |   3   |     Network Layer
+     +-------+     +-----+-----+     +-------+
+     |   2   |     |  2  |  2  |     |   2   |     Data Link Layer
+     +-------+     +-----+-----+     +-------+
+     |   1   |     |  1  |  1  |     |   1   |     Physical Layer
+     +-------+     +-----+-----+     +-------+
+         |            |     |            |
+         +------------+     +----...-----+
+   
+APSTNDP
+
+- TCP/IP model
+
+3 - Application
+
+1 - Transport
+
+1 - Network
+
+2 - Data Link
+
+ATND
+
+----------------------------------
+
+2. What are the upper layers, middle layers and the lower layers of the ISO/OSI model?
+
+----------------------------------
+
+3. Explain the purpose and use of the ISO/OSI model.
+
+- Communication
+    - Established standards
+    - Standards are known as protocols
+- Implementation
+    - A framework is helpful in the design of hardware and software for communication
+    - ISO-OSI Model serves this purpose
+    - ISO-OSI supersedes the TCP/IP model 
+- The model acts as a frame of reference in the design of communications and networking products
+
+----------------------------------
+
+4. Draw a data packet and mark its components. Hint: Receiver's address would be one of the components. 
+
