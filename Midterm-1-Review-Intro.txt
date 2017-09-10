@@ -695,4 +695,269 @@ Optical Carrier is the standard unit of measure for the rate of transmission ban
 
 ----------------------------------
 
+Formatting of Information for Transmission
+
+-----------------------------------------------------------------------
+
+1. Describe a character frame?
+
+- Used in character-by-character transmission
+	- At the center of the frame is the ASCII code of the character
+	- Parity bit for error checking
+	- Start bit indicating the starting point of the frame
+	- Stop bit indicating the ending point of the frame
+
+7 bit ASCII + 1 bit Start Bit + 1 bit Stop bit + Parity bit = 10 bits
+
+----------------------------------
+
+2. Name the components of a typical data packet.
+
+Synchronization
+Start of text
+Senders Address
+Receivers Address
+Block of data
+Error checking on the block
+End of text
+
+----------------------------------
+
+3. Compare the changes made by a router and a switch to the packets.
+
+- Router
+	- Device used for interfacing different networks operating under different protocols
+	- Routes the data packets
+	- May change the packet format to conform to the destination network protocol
+
+- Switch
+	- Directs packets within a network
+	- Switches do not change the packet format as they only deliver it from one client to another in a single network
+    
+----------------------------------
+
+4. Name some of the error checking techniques?
+
+- There are two separate error checking procedures employed
+- Once is performed on each of the characters carried by the block
+- The other is performed on the entire block of data
+
+- On each character
+	- Parity (VRC) - Vertical Redundancy Check
+- On the entire packet of data, one of the following two error checking procedures could be used
+	- Longitudinal Redundancy Checking (LRC)
+	- Cyclic Redundancy Checking (CRC)
+		- CRC 16
+		- CRC 32 – More sophisticated 
+        
+----------------------------------
+
+5. What is the significance of CRC-32?
+
+Superior to CRC 16 in detection of errors also finds errors in the payload of the packet.
+
+----------------------------------
+
+6. Can packets be of different lengths?
+
+Yes, it is usually of variable length, up to a maximum that is set by the network protocol and sometimes the equipment on the route. Some networks can break a larger packet into smaller packets when necessary.
+
+----------------------------------
+
+7. Explain the difference between packets and cells?
+
+- Frame (Packet) concept
+	- Size of the packet is different from one packet to another packet
+- Cell concept
+	- Cells are packets of fixed length
+	- ATM is an example of the cell concept in data formatting
+    
+----------------------------------
+
+8. Give examples of packet swtiching and cell switching technologies.
+
+Packet: internet, LAN, Ethernet, Frame Relay
+Cell: ATM 
+
+----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Asynchronous and Synchronous Transmission
+
+-----------------------------------------------------------------------
+
+1. Explain the difference between synchronous and asynchronous transmission.
+
+- Asynchronous
+	- Burst mode transmission
+	- Sender and receiver are not synchronized with respect to the flow of the information 
+	- However, the sender and receiver are synchronized with respect to the timing of the characters that are transmitted
+- Synchronous
+	- Sender and receiver are synchronized with respect to the sending and receiving of information 
+	- Each character need not have a start-bit and a stop-bit as the sender and the receiver are both synchronized 
+	- Requires more hardware and software resources
+	- High speed communication is the norm
+Synchronous and asynchronous transmissions are two different methods of transmission synchronization. Synchronous transmissions are synchronized by an external clock, while asynchronous transmissions are synchronized by special signals along the transmission medium.
+
+----------------------------------
+
+2. Compare asynchronous and synchronous transmission. Which one is more efficient? Which one is used commonly in practice?
+
+- Synchronous
+	- High-speed communication links established using synchronous modems
+	- It is now possible to establish high speed links based on asynchronous transmission
+	- Used in a number of mainframe installations
+	- Collective exchange of information between the mainframe and the peripheral devices is based on synchronous transmission 
+
+- Asynchronous 
+	- Low and high-speed transmissions are possible
+	- Low speed
+		- Almost all modem based communications fall into this category 
+	- High speed
+		- Asynchronous Transfer Mode (ATM)
+	- Internet is a good example where asynchronous communication is used predominantly to carry the information
+    
+----------------------------------
+
+3. Compare the cost and complexity of implementing asynchronous and synchronous transmission.
+
+Asynchronous transmission - Cheap, Setup is simple
+Synchronous transmission - Costly, Setup is complex
+
+----------------------------------
+
+Serial and Parallel Transmission
+
+-----------------------------------------------------------------------
+
+1. Compare and contrast serial and parallel transmission.
+
+Parallel transmission 
+
+- Faster
+- Expensive
+- Moves more data, since it transfers eight bits
+- 8 wires
+- This type of cable is also prone to distortion and noise.
+- Device examples - printers, scientific devices - multimeters
+
+Serial transmission
+
+- Slower
+- Cheaper
+- One bit at a time
+- 2 wires
+- The cables only need one pair of wires to transfer data.
+- One wire receives data, and the other sends it. 
+- Preferred over parallel when there is a need to transfer data over long distances
+- Device examples - external modems
+- COM ports
+
+----------------------------------
+
+2. Name some areas of application for serial and parallel transmission.
+
+- Parallel
+	- Printers
+	- scientific devices - multimeters
+
+- Serial
+	- Device examples - external modems
+	- COM ports
+    
+----------------------------------
+
+3. Is USB a bus technology?
+Yes
+
+----------------------------------
+
+4. What is a passive USB hub? When is it necessary to use an active USB hub?
+
+Passive Hub
+	- non powered
+	- no external power source
+	- Pulls power form computers port
+
+Active Hub
+	- Powered
+	- uses an external power source
+	- Active USB hubs are usually powered through a wall outlet
+
+----------------------------------
+
+5. What is the general procedure for connecting and configuring USB peripherals if they do not support plug-and-play? 
+
+Doubt
+
+----------------------------------
+
+6. Name the latest USB standard? How is an faster USB port differentiated from a slower USB port?
+
+- USB 1.1
+- USB 2.0
+- USB 3.0
+- USB On-The-Go (OTG) A newer standard being designed for portable and small devices 
+
+----------------------------------
+
+7. List a few different types of USB ports and connectors. 
+
+- Type A
+	- Upstream connectors
+	- From the system 	
+- Type B
+	- Downstream connectors
+	- To the device
+- Mini A
+- Mini B
+	- Smaller connector for PDAs, mobile phones and digital cameras
+- Mini-A and Mini-B and Mini-AB
+	- Small for factor connectors for USB OTG
+
+----------------------------------
+
+8. Explain the term FireWire.
+
+- IEEE 1394
+- Competes with USB
+- 400 Mbps or 50 Mbps
+- Used extensively in audio and video appliances
+- can replace SCSI and IDE for connecting hard disks
+- Basic networking possible with FireWire
+- Peer to Peer
+
+----------------------------------
+
+9. What is a thunderbolt connection?
+
+Combines PCI Express and DisplayPort 
+Thunderbolt is the brand name of a hardware interface developed by Intel that allows the connection of external peripherals to a computer.
+Combines up to six peripherals, like storage devices and monitors, to be daisy-chained together.
+Can also connect USB and FireWire peripherals via Thunderbolt, as long as you have the proper adapter.
+
+----------------------------------
+
+10. Explain the procedure that needs to be followed to connect a Bluetooth device to a computer.
+
+Doubt
+
+----------------------------------
+
+
+
+
 
