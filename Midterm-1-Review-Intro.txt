@@ -781,6 +781,12 @@ Cell: ATM
 
 ----------------------------------
 
+Packet and Circuit Switching 
+
+-----------------------------------------------------------------------
+
+1. How do packet switching and circuit switching operate? Which one of these two technologies is more efficient?
+
 
 
 
