@@ -343,6 +343,8 @@ Low Earth Orbit
 This satellite moves rapidly relative to point on earth, large number needed for global coverage, require only low-power transmitters, negligible transmission delay, least expensive, and shortest orbit life (as low as 5 yrs). 
 Used for telephones.
 
+Doubt
+
 ----------------------------------
 
 12. Give the technical definition of bandwidth. List the term or terms used for expressing bandwidth.
@@ -367,7 +369,7 @@ Character encoding schemes
 ASCII
 American Standard Code for Information Interchange
 Character encoding schemes
-7 bits per character 
+7 bits per character and 8 bits per character
 
 UNICODE
 16 bits per character
@@ -386,7 +388,7 @@ UNICODE
 
 Digitization of Audio
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Describe the process of digitizing audio. Address the two stage digitization process, the first that involves digitization and the second that converts digitized signals into binary digital signals.
 
