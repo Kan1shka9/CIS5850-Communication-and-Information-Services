@@ -1,10 +1,10 @@
 Midterm 1 Review Intro
 
------------------------------------------------------------------------------------------------------------------------------------------
+=========================================================================================================================================
 
 Communication Trends and Applications
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Compare data communication in the past with information communication at present.
 
@@ -34,10 +34,10 @@ VPN encrypts all traffic but a HTTPS session will encrypt only web based traffic
 3. Explain the terms Intranet, Extranet and Internet. Where does GET fall within these three network architectures.
 
 Intranet
-Internet restricted to companies own network
+Internet restricted to companies own network.
 
 Extranet
-Intranet extended to include outside organizations
+Intranet extended to include outside organizations.
 
 Internet
 Global system of interconnected computer networks.
@@ -101,8 +101,6 @@ Applications like email (Gmail, Yahoo mail etc), Social Networking sites (Facebo
 
 9. What is the role played by digital technology in today's computer and voice communication?
 
-Doubt
-
 Digitization of all forms of information has made storage, retrieval and transmission of data efficient
 
 ----------------------------------
@@ -111,7 +109,7 @@ Digitization of all forms of information has made storage, retrieval and transmi
 
 Doubt
 
-Slide 31
+<see image>
 
 ----------------------------------
 
@@ -132,7 +130,7 @@ Slide 31
 
 Wide Area Network is a computer network that extends over a large geographical distance.
 
-Doubt
+WAN access and backbone technologies -> FDDI
 
 ----------------------------------
 
@@ -227,7 +225,7 @@ Real-time applications - Microsoft Office365, VPN, VoIP, video conferencing, web
 
 Introduction to Analog and Digital Technologies
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Draw a typical analog and a digital signal. Explain the difference between the two.
 
