@@ -465,7 +465,7 @@ It allows streaming over the Internet.
 
 Digitization of Image
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. What is a pixel? How is a screen resolution stated?
 
@@ -515,9 +515,12 @@ A 24-bit video adapter, for example, has a color depth of 2 to the 24th power (a
 6. Name some of the compressed file formats for image. Which of these formats are used extensive on the web?
 
 GIF
+JPEG
+PNG
 MIC - Microsoft Image Composer
 PCD - KODAK
-JPEG
+
+Uncompressed - BMP
 
 ----------------------------------
 
