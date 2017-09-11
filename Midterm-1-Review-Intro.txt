@@ -355,7 +355,7 @@ Analog devices -> the bandwidth is expressed in cycles per second, or Hertz (Hz)
 
 Digitization of Data
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Explain the purpose of the coding standards known as EBCDIC, ASCII and UNICODE.
 
