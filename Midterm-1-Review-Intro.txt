@@ -534,7 +534,7 @@ Applications can determine the degree of compression to apply, and the amount of
 
 Digitization of Video 
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Name some of the video file formats?
 
@@ -544,31 +544,143 @@ Digitization of Video
     - MOV (Apple QuickTime Movie)
     - MP4 (Moving Pictures Expert Group 4)
     
+
+Compressed
+    - MPEG 1, MPEG 2, MPEG 3, MPEG 4
+    - MP4
+    - Windows Media Video
+    - Real Media
+    - Indio
+    - QuickTime - .mov
+    - ActiveMovie
+    - AVI
+    
+Streaming
+    - RealVideo
+    - QuickTime - .mov
+    - Microsoft - wma, wmv, Active streaming Format
+
 ----------------------------------
 
 2. Explain the different between a compressed file format and a streaming file format.
 
+A video file format is a type of file format for storing digital video data on a computer system. 
+Video is almost always stored in compressed form to reduce the file size. 
+Streaming is without a wait. 
+
 ----------------------------------
 
+3. Outline the steps involved in digitizing video.
 
+Digitization of video is an extension of the process of digitizing an image
+It amounts to the transmission of certain number of still images known as frames per second
+Obviously, digitized video requires higher bandwidth for transmission and more space for storage
 
+----------------------------------
 
+4. Define the terms, resolution, color depth and number of frames with respect to the digitization of video.
 
+Resolution
+The number represents the number of horizontal lines the video has from top to bottom. 
+A 480p video is made up of 480 lines stacked one on top of another, with each line being 852 pixels wide.
 
+Color depth
+Color depth aka bit depth, is the number of bits used to indicate the color of a single pixel, in a bitmapped image or video frame buffer
 
+Number of frames
+It amounts to the transmission of certain number of still images known as frames per second
+continuous motion - 30 frames/sec
+                  - 25 frames/sec
+video conferencing - 15 frames/sec
+                   - 5 frames/sec
 
+----------------------------------
 
+5. What is the relationship between quality of video and recording parameters such as color depth, resolution and frame rate?
 
+The higher the frame size and frame rate, the better the video quality and the larger the file size. 
+Frame size and frame rate are the factors affecting the size of a video file.
 
+----------------------------------
 
+6. What are some of the techniques used in video transmission to minimize bandwidth requirements?
 
+- Decrease the number of colors displayed
+- Decrease the resolution
+- Minimize Windows for maximum efficiency: Transmit less number of pixels in minimized form
 
+----------------------------------
 
+7. Name some of the raw file formats, compressed file formats and streaming file formats in video recording.
 
+RAW
+    - AVI
+
+Compressed
+    - MPEG 1, MPEG 2, MPEG 3, MPEG 4
+    - MP4
+    - Windows Media Video
+    - Real Media
+    - Indio
+    - QuickTime - .mov
+    - ActiveMovie
+    - AVI
+    
+Streaming
+    - RealVideo
+    - QuickTime - .mov
+    - Microsoft - wma, wmv, Active streaming Format
+
+----------------------------------
+
+8. Explain the use of MPEG 1 and MPEG 3. 
+
+MPEG-1
+Lossy compression of video and audio. 
+It is designed to compress VHS-quality raw digital video and CD audio down to 1.5 Mbit/s (26:1 and 6:1 compression ratios respectively) without excessive quality loss, making video CDs, digital cable/satellite TV and digital audio broadcasting (DAB) possible.
+
+MPEG-3
+Group of audio and video coding standards agreed upon by the Moving Picture Experts Group (MPEG) designed to handle HDTV signals at 1080p in the range of 20 to 40 megabits per second.
+
+Doubt
+
+----------------------------------
+
+9. What are the difference between unicasting, multicasting and broadcasting? Which one of these is most efficient in terms of bandwidth usage.
+
+Unicast 
+one to one
+
+Multicast 
+one to many
+
+Broadcast 
+one to all
+
+- Unicast least bandwidth usage
+
+----------------------------------
+
+10. Explain the role played by multicasting-enabled routers in multicasting video.
+
+Obviously, where there is large number of recipients of a replicated transmission, multicast technology makes a tremendous difference in both server load and network load, even in a simple network with a small number of router and switch hops. Additional features of multicast are beneficial in specific applications such as financial services. Multicast transmissions are delivered nearly simultaneously to all members of the recipient group. The variability in delivery time is limited to differences in end-to-end network delay among the range of server-to-client paths.
+
+Doubt
+
+----------------------------------
+
+11. Name a few consumer and professional video conferencing services.
+
+Webex
+Go To Meeting
+Adobe Connect
+Skype
+
+----------------------------------
 
 Electronic and Optical Transmission
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. How is information represented using electronic signals and how is the same represented using optical signals?
 
