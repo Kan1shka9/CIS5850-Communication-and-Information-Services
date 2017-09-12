@@ -43,6 +43,7 @@ Internet
 Global system of interconnected computer networks.
 
 GET is a HTTP method, hence it is used in web communication and can be used in all 3 networks.
+Doubt
 
 ----------------------------------
 
@@ -751,6 +752,8 @@ Light bounces and travels along the path of the fiber
 - Jacket
 	- An outer protective polymer layer (usually polyurethane or PVC)
     
+Doubt
+    
 ----------------------------------
 
 8. Name some of the common uses of fiber optic transmission.
@@ -766,7 +769,7 @@ Light bounces and travels along the path of the fiber
 9. What is the device that is used for the conversion of optical signals into electrical signals and vise-versa
 
 Optical ---Photo Electric Cells---> Electronic
-Electronic ---LED--->Optical
+Electronic ---LED---> Optical
 
 ----------------------------------
 
@@ -812,7 +815,7 @@ Optical Carrier is the standard unit of measure for the rate of transmission ban
 
 Formatting of Information for Transmission
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Describe a character frame?
 
@@ -898,7 +901,7 @@ Cell: ATM
 
 Packet and Circuit Switching 
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. How do packet switching and circuit switching operate? Which one of these two technologies is more efficient?
 
@@ -918,7 +921,7 @@ Packet and Circuit Switching 
 
 Asynchronous and Synchronous Transmission
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Explain the difference between synchronous and asynchronous transmission.
 
@@ -962,7 +965,7 @@ Synchronous transmission - Costly, Setup is complex
 
 Serial and Parallel Transmission
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Compare and contrast serial and parallel transmission.
 
@@ -1025,6 +1028,8 @@ Active Hub
 
 https://support.hp.com/us-en/document/c03327635
 
+Doubt
+
 ----------------------------------
 
 6. Name the latest USB standard? How is an faster USB port differentiated from a slower USB port?
@@ -1033,6 +1038,8 @@ https://support.hp.com/us-en/document/c03327635
 - USB 2.0
 - USB 3.0
 - USB On-The-Go (OTG) A newer standard being designed for portable and small devices 
+
+Doubt
 
 ----------------------------------
 
@@ -1077,11 +1084,13 @@ Can also connect USB and FireWire peripherals via Thunderbolt, as long as you ha
 
 https://www.howtogeek.com/214185/beginner-geek-how-to-pair-devices-over-bluetooth/
 
+Doubt
+
 ----------------------------------
 
 Multiplexing
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Explain the difference between direct and inverse multiplexing.
 
