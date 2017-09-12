@@ -929,6 +929,12 @@ Circuit switching
     - Ordering of packets may vary at the destination
     - Additional H/W and S/W required to assemble and route packets
     - Straming has to be performed for continuity
+    - Security
+    - Bandwidth used to full potential
+    - Devices of different speeds can communicate
+    - Not affected by line failure (redirects signal)
+    - Availability – no waiting for a direct connection to become available
+    - During a crisis or disaster, when the public telephone network might stop working, e-mails and texts can still be sent via packet switching
 
 Packet Assembly
     - Packets are assembled to preserve the order of transmission
@@ -937,13 +943,6 @@ Packet Assembly
 Transmission of Audio and Video in Packet Switching
     - Process ensures orderly arrival of data packets is called streaming
     - Streaming also compresses data to minimize bandwidth
-    
-    - Security
-    - Bandwidth used to full potential
-    - Devices of different speeds can communicate
-    - Not affected by line failure (redirects signal)
-    - Availability – no waiting for a direct connection to become available
-    - During a crisis or disaster, when the public telephone network might stop working, e-mails and texts can still be sent via packet switching
 
 ----------------------------------
 
@@ -1014,6 +1013,8 @@ Skype, Google Hangouts, Viber, Team Talk
 
 7. What is the challenge posed by packet switching to streaming. 
 
+Doubt
+
 ----------------------------------
 
 8. Which one of the two technologies, circuit switching or packet switching, better suited for conducing multiple sessions? 
@@ -1023,6 +1024,8 @@ Packet switching
 ----------------------------------
 
 9. Is real-time transmission better supported by circuit transmission? If so, why?
+
+Doubt
 
 ----------------------------------
 
@@ -1051,9 +1054,13 @@ Doubt
 
 12. Name some applications where a symmetric connection to the Internet would be preferred. 
 
+Doubt
+
 ----------------------------------
 
 13. List some of the channels that are available in a cable connection to a house. Refer to data, voice and video channels in the answer.
+
+Doubt
 
 ----------------------------------
 
