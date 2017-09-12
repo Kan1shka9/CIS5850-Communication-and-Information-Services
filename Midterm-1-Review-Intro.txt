@@ -1163,7 +1163,7 @@ Time division multiplexing - TDM
 
 ISO/OSI Model 
 
------------------------------------------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Name the layers in the TCP/IP model and the ISO/OSI model.
 
@@ -1252,5 +1252,3 @@ Application layer - Application Specific Message
                         - Web page in case of HTTP
                         
 ----------------------------------
- 
-
