@@ -905,19 +905,157 @@ Packet and Circuit Switching 
 
 1. How do packet switching and circuit switching operate? Which one of these two technologies is more efficient?
 
+Packet switching
+    - Dynamic Path
+    - Path often changes from packet to packet
+    - Path may be switched among packets
+    - Efficient
 
+Circuit switching
+    - Static Path
+    - Path is initially established and remains unchanged for the duration of the communication session
+    - Inefficient
+    
+- In packet-based networks, the message gets broken into small data packets.  
+- These packets are sent out from the computer and they travel around the network seeking out the most efficient route to travel as circuits become available.  
+- This does not necessarily mean that they seek out the shortest route.
+- Each packet may go a different route from the others.
 
+- Advantages
+    - Better utilization of network
+    - Multiple sessions possible
+    
+- Disadvantages
+    - Ordering of packets may vary at the destination
+    - Additional H/W and S/W required to assemble and route packets
+    - Straming has to be performed for continuity
 
+Packet Assembly
+    - Packets are assembled to preserve the order of transmission
+    - Packet arrived earlier held in buffer
+    
+Transmission of Audio and Video in Packet Switching
+    - Process ensures orderly arrival of data packets is called streaming
+    - Streaming also compresses data to minimize bandwidth
+    
+    - Security
+    - Bandwidth used to full potential
+    - Devices of different speeds can communicate
+    - Not affected by line failure (redirects signal)
+    - Availability – no waiting for a direct connection to become available
+    - During a crisis or disaster, when the public telephone network might stop working, e-mails and texts can still be sent via packet switching
 
+----------------------------------
 
+2. Describe the terms static and dynamic paths.
 
+A path is a route for data to travel between two nodes in a network
 
+Static Path
+    - Path is initially established and remains unchanged for the duration of the communication session
+    - Circuit switching
 
+Dynamic Path
+    - Path often changes from packet to packet
+    - Packet switching
+    
+----------------------------------
 
+3. When does circuits become saturated? 
 
+Doubt
 
+----------------------------------
 
+4. Name some applications of packet switching. 
 
+Internet
+LAN
+Ethernet
+Frame Relay
+
+----------------------------------
+
+5. Is circuit switching or packet switching closely related to voice transmission? Why?
+
+- Circuit switching
+
+- There are three phases in circuit switching:
+    - Establish
+    - Transfer
+    - Disconnect 
+- The telephone message is sent all together; it is not broken up.  
+- The message arrives in the same order that it was originally sent.
+- In modern circuit-switched networks, electronic signals pass through several switches before a connection is established. 
+- During a call no other network traffic can use those switches. 
+- The resources remain dedicated to the circuit during the entire data transfer and the entire message follows the same path.
+- Supports both analog and digital
+- Circuit switching can be analog or digital. 
+    - Advantages
+        - Circuit is dedicated to the call – no interference, no sharing
+        - Guaranteed the full bandwidth for the duration of the call
+        - Guaranteed quality of service
+    - Disadvantages
+        - Inefficient – the equipment may be unused for a lot of the call; if no data is being sent, the dedicated line still remains open.
+        - It takes a relatively long time to set up the circuit.
+        - During a crisis or disaster, the network may become unstable or unavailable.
+        - It was primarily developed for voice traffic rather than data traffic.
+        - Multiple sessions cannot be extablished
+        - Inefficient use of path can lead to "circuit saturation"
+        
+----------------------------------
+
+6. Explain the term VoIP. List some of its applications.
+
+Voice over Internet Protocol is a category of hardware and software that enables people to use the Internet as the transmission medium for telephone calls by sending voice data in packets using IP rather than by traditional circuit transmissions of the PSTN.
+Skype, Google Hangouts, Viber, Team Talk
+
+----------------------------------
+
+7. What is the challenge posed by packet switching to streaming. 
+
+----------------------------------
+
+8. Which one of the two technologies, circuit switching or packet switching, better suited for conducing multiple sessions? 
+
+Packet switching
+
+----------------------------------
+
+9. Is real-time transmission better supported by circuit transmission? If so, why?
+
+----------------------------------
+
+10. Describe the differences between a router and a switch.
+
+- Router
+	- Device used for interfacing different networks operating under different protocols
+	- Routes the data packets
+	- May change the packet format to conform to the destination network protocol
+
+- Switch
+	- Directs packets within a network
+	- Switches do not change the packet format as they only deliver it from one client to another in a single network
+
+----------------------------------
+
+11. Explain the difference between symmetric and asymmetric connections to the Internet? What are the typical upload and download speeds of a cable modem connection.
+
+- Symmetric bandwidth corresponds to the situation when the maximum rate of transfer is the same in both directions.
+
+- Asymmetric bandwidth corresponds to the situation when the maximum rate of transfer is different in each direction.
+
+Doubt
+
+----------------------------------
+
+12. Name some applications where a symmetric connection to the Internet would be preferred. 
+
+----------------------------------
+
+13. List some of the channels that are available in a cable connection to a house. Refer to data, voice and video channels in the answer.
+
+----------------------------------
 
 Asynchronous and Synchronous Transmission
 
