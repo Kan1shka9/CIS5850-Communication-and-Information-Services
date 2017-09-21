@@ -76,5 +76,148 @@ ATND
 | 10. It has 7 layers                                                                                                                        | 10. It has 4 layers                                                                                                                                                      |
 +--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-ISO/OSI - generic, data delivery guarenteed, vertical
-TCP/IP - data delivery not guarenteed, horizontal
+ISO/OSI - generic, packet delivery guarenteed, vertical approach, reference model, protocol independent, 7 layers
+TCP/IP - packet delivery not guarenteed, horizontal approach, 4 layers
+
+----------------------------------
+
+3. Name some of the WAN and LAN related protocols in the lower layer of the TCP/IP Model. Differentiate between the two types of protocols.
+
+Doubt
+
+----------------------------------
+
+4. Explain the protocol known as Telnet and its usage. 
+
+Telnet port - 23
+It is a network protocol that allows a user on one computer to log onto another computer that is part of the same network.
+
+----------------------------------
+
+5. List some of the upper layer protocols. 
+
+HTTP
+SMTP
+Telnet
+FTP
+
+----------------------------------
+
+6. Explain the purpose and function of the following protocols: HTTP, HTTPS, FTP, SMTP, POP3 IMAP, SNMP, TELNET, TCP, UDP and ARP. Briefly describe incoming and outgoing mail protocols. 
+
+HTTP - 80
+Hypertext Transfer (or Transport) Protocol, the data transfer protocol used on the World Wide Web.
+
+HTTPS - 443
+Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the protocol over which data is sent between your browser and the website that you are connected to. The 'S' at the end of HTTPS stands for 'Secure'. It means all communications between your browser and the website are encrypted.
+
+FTP - 21
+The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
+
+SMTP - 25
+Simple Mail Transfer Protocol is a TCP/IP protocol used in sending and receiving e-mail. 
+
+POP3 - 110
+Post Office Protocol 3 is a protocol for receiving email by downloading it to your computer from a mailbox on the server of an Internet service provider.
+
+IMAP - 143
+IMAP (Internet Message Access Protocol) is a standard email protocol that stores email messages on a mail server, but allows the end user to view and manipulate the messages as though they were stored locally on the end user's computing device(s).
+
+SNMP - 161, 162
+Simple Network Management Protocol (SNMP) is a popular protocol for network management. 
+It is used for collecting information from, and configuring, network devices, such as servers, printers, hubs, switches, and routers on an Internet Protocol (IP) network.
+
+Telnet - 23
+It is a network protocol that allows a user on one computer to log onto another computer that is part of the same network.
+
+TCP
+Transmission Control Protocol
+Host-to-Host Transport Layer protocol
+One-to-one and connection-oriented reliable protocol (receive acknowledgement). 
+Used in the accurate transmission of large amount of data. 
+Slower compared to UDP because additional error checking being performed.
+
+UDP
+User Datagram Protocol
+Host-to-Host Transport Layer protocol
+One-to-one or one-to-many, connectionless and unreliable protocol. 
+
+ARP
+Address Resolution Protocol
+Network layer protocol used to convert an IP address into a physical address
+
+Doubt
+
+----------------------------------
+
+7. What are port numbers? Indicate the de facto port numbers for the above protocols.
+
+TCP requires port numbers on the host and destination for communication. Different port numbers are assigned to different protocols by default. Standard port numbers have been assigned by the Internet Assigned Number Authority (IANA).
+Note: when using a default port, you do not need to indicate the port number for communication.
+
++--------+----------+
+| HTTP   |       80 |
+| HTTPS  |      443 |
+| FTP    |       21 |
+| SMTP   |       25 |
+| POP3   |      110 |
+| IMAP   |      143 |
+| SNMP   | 161, 162 |
+| Telnet |       23 |
+| DNS    |       53 |
++--------+----------+
+
+----------------------------------
+
+8. Describe the term DNS. What is the purpose of a DNS server?
+
+DNS
+Domain Name System
+Application Layer/Operation related protocol
+Resolves domain names to IP Addresses and vice versa
+
+----------------------------------
+
+9. Compare and contrast TCP with UDP. Describe one or more scenarios where one of the protocols would be more appropriate than the other. When is UDP Preferred for communication? 
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                TCP                                                                                 |                                                                       UDP                                                                       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| Transmission Control Protocol                                                                                                                                      | User Datagram Protocol                                                                                                                          |
+| connection-oriented protocol                                                                                                                                       | connectionless protocol                                                                                                                         |
+| suited for applications that require high reliability, and transmission time is relatively less critical.                                                          | suitable for applications that need fast, efficient transmission, such as games, video conferencing                                             |
+| HTTP, HTTPs, FTP, SMTP, Telnet                                                                                                                                     | DNS, DHCP, TFTP, SNMP, RIP, VOIP                                                                                                                |
+| TCP rearranges data packets in the order specified.                                                                                                                | UDP has no inherent order as all packets are independent of each other. If ordering is required, it has to be managed by the application layer. |
+| The speed for TCP is slower than UDP.                                                                                                                              | UDP is faster because error recovery is not attempted. It is a "best effort" protocol.                                                          |
+| There is absolute guarantee that the data transferred remains intact and arrives in the same order in which it was sent.                                           | There is no guarantee that the messages or packets sent would reach at all.                                                                     |
+| TCP header size is 20 bytes                                                                                                                                        | UDP Header size is 8 bytes.                                                                                                                     |
+| TCP is heavy-weight. TCP requires three packets to set up a socket connection, before any user data can be sent. TCP handles reliability and congestion control.   | UDP is lightweight. There is no ordering of messages, no tracking connections, etc. It is a small transport layer designed on top of IP.        |
+| TCP does Flow Control. TCP requires three packets to set up a socket connection, before any user data can be sent. TCP handles reliability and congestion control. | UDP does not have an option for flow control                                                                                                    |
+| TCP does error checking and error recovery. Erroneous packets are retransmitted from the source to the destination.                                                | UDP does error checking but simply discards erroneous packets. Error recovery is not attempted.                                                 |
+| Acknowledgement segments                                                                                                                                           | No Acknowledgment                                                                                                                               |
+| SYN, SYN-ACK, ACK                                                                                                                                                  | No handshake (connectionless protocol)                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+UDP
+games
+video conferencing
+UDP used for multimedia transmissions (video and game files)
+audio casting (multicasting, broadcasting)
+
+TCP
+HTTP
+FTP
+SMTP
+
+----------------------------------
+
+10. Explain the terms connection-oriented and connection-less protocols. Include in the discussion, the terms reliable and unreliable communications.
+
+Connection-Oriented means that when devices communicate, they perform handshaking to set up an end-to-end connection. 
+Connection-Oriented systems can only work in bi-directional communications environments. 
+Connection-oriented protocol services are often reliable network services, that provide acknowledgment after successful delivery.
+
+Connectionless communication is usually achieved by transmitting information in one direction, from source to destination without checking to see if the destination is still there, or if it is prepared to receive the information.
+IP, UDP, ICMP, DNS, TFTP and SNMP are examples of connectionless protocols in use on the Internet.
+Connectionless transmissions are considered unreliable because the service provider usually cannot guarantee that there will be errors in the delivery of the packet.
+
