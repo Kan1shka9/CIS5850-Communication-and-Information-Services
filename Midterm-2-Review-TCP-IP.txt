@@ -218,7 +218,8 @@ They perform handshaking to set up an end-to-end connection
 Connection-Oriented systems can only work in bi-directional communications environments. 
 Connection-oriented protocol services are often reliable network services, that provide acknowledgment after successful delivery.
 
-Connectionless communication is usually achieved by transmitting information in one direction, from source to destination without checking to see if the destination is still there, or if it is prepared to receive the information.
+Connectionless protocol 
+Usually achieved by transmitting information in one direction, from source to destination without checking to see if the destination is still there, or if it is prepared to receive the information.
 IP, UDP, ICMP, DNS, TFTP and SNMP are examples of connectionless protocols in use on the Internet.
 Connectionless transmissions are considered unreliable because the service provider usually cannot guarantee that there will be errors in the delivery of the packet.
 
