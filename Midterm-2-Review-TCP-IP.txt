@@ -213,7 +213,8 @@ SMTP
 
 10. Explain the terms connection-oriented and connection-less protocols. Include in the discussion, the terms reliable and unreliable communications.
 
-Connection-Oriented means that when devices communicate, they perform handshaking to set up an end-to-end connection. 
+Connection-Oriented protocol
+They perform handshaking to set up an end-to-end connection
 Connection-Oriented systems can only work in bi-directional communications environments. 
 Connection-oriented protocol services are often reliable network services, that provide acknowledgment after successful delivery.
 
@@ -221,3 +222,4 @@ Connectionless communication is usually achieved by transmitting information in 
 IP, UDP, ICMP, DNS, TFTP and SNMP are examples of connectionless protocols in use on the Internet.
 Connectionless transmissions are considered unreliable because the service provider usually cannot guarantee that there will be errors in the delivery of the packet.
 
+----------------------------------
