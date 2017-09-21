@@ -1,0 +1,80 @@
+Midterm 2 Review TCP/IP
+
+=========================================================================================================================================
+
+Section 1: Overview of TCP/IP 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. What is meant by the TCP/IP suite of protocols? Explain RFC and IETF in relation to this protocol. 
+
+The Internet protocol suite is the conceptual model and set of communications protocols used on the Internet and similar computer networks. 
+It is commonly known as TCP/IP because the original protocols in the suite are the Transmission Control Protocol (TCP) and the Internet Protocol (IP).
+
+RFC
+Request for Comment 
+It is a document published by IETF to define internet related standards, such as TCP/IP.
+
+IETF
+Internet Engineering Task Force 
+It is a non-profit organization that sets Internet Standards, such as TCP/IP, and publishes the RFCs.
+
+----------------------------------
+
+2. How many layers are there in the TCP/IP model? Label each layer. Compare the layers in the TCP/IP model to the layers in the ISO/OSI model.
+
+TCP/IP -> 4 layers
+
+- ISO/OSI model
+
+     End System                      End System
+
+     +-------+                       +-------+
+     |   7   |                       |   7   |     Application Layer
+     +-------+                       +-------+
+     |   6   |                       |   6   |     Presentation Layer
+     +-------+                       +-------+
+     |   5   |      Intermediate     |   5   |     Session Layer
+     +-------+         System        +-------+
+     |   4   |                       |   4   |     Transport Layer
+     +-------+     +-----------+     +-------+
+     |   3   |     |     3     |     |   3   |     Network Layer
+     +-------+     +-----+-----+     +-------+
+     |   2   |     |  2  |  2  |     |   2   |     Data Link Layer
+     +-------+     +-----+-----+     +-------+
+     |   1   |     |  1  |  1  |     |   1   |     Physical Layer
+     +-------+     +-----+-----+     +-------+
+         |            |     |            |
+         +------------+     +----...-----+
+   
+APSTNDP
+
+- TCP/IP model
+
+3 - Application
+
+1 - Transport
+
+1 - Network
+
+2 - Data Link
+
+ATND
+
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                      OSI(Open System Interconnection)                                                      |                                                        TCP/IP(Transmission Control Protocol / Internet Protocol)                                                         |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1. OSI is a generic, protocol independent standard, acting as a communication gateway between the network and end user.                    | 1. TCP/IP model is based on standard protocols around which the Internet has developed. It is a communication protocol, which allows connection of hosts over a network. |
+| 2. In OSI model the transport layer guarantees the delivery of packets.                                                                    | 2. In TCP/IP model the transport layer does not guarantees delivery of packets. Still the TCP/IP model is more reliable.                                                 |
+| 3. Follows vertical approach.                                                                                                              | 3. Follows horizontal approach.                                                                                                                                          |
+| 4. OSI model has a separate Presentation layer and Session layer.                                                                          | 4. TCP/IP does not have a separate Presentation layer or Session layer.                                                                                                  |
+| 5. OSI is a reference model around which the networks are built. Generally it is used as a guidance tool.                                  | 5. TCP/IP model is, in a way implementation of the OSI model.                                                                                                            |
+| 6. Network layer of OSI model provides both connection oriented and connectionless service.                                                | 6. The Network layer in TCP/IP model provides connectionless service.                                                                                                    |
+| 7. OSI model has a problem of fitting the protocols into the model.                                                                        | 7. TCP/IP model does not fit any protocol                                                                                                                                |
+| 8. Protocols are hidden in OSI model and are easily replaced as the technology changes.                                                    | 8. In TCP/IP replacing protocol is not easy.                                                                                                                             |
+| 9. OSI model defines services, interfaces and protocols very clearly and makes clear distinction between them. It is protocol independent. | 9. In TCP/IP, services, interfaces and protocols are not clearly separated. It is also protocol dependent.                                                               |
+| 10. It has 7 layers                                                                                                                        | 10. It has 4 layers                                                                                                                                                      |
++--------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ISO/OSI - generic, data delivery guarenteed, vertical
+TCP/IP - data delivery not guarenteed, horizontal
