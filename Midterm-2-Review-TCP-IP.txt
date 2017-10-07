@@ -349,6 +349,14 @@ Each 16-bit field is represented by its Hexadecimal conversion, separated by a c
 
 3. What are the two components of the IP address? Explain the terms network ID and host ID.
 
+The two components are: Network ID and Host ID. The length of each component is determined by the IP address class
+
+Network id: The part of an IP address that identifies the network.
+Host id: The part of an IP address that identifies a host in a network.
+
+----------------------------------
+
+
 
 Doubts
 
