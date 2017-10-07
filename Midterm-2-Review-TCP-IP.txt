@@ -458,7 +458,31 @@ Security
 
 16. How does IPv6 interoperate with IPv4? List the tunneling protocols that are used by IPv6 networks to tunnel through IPv4 networks.
 
+Methods of tunneling IPv6 traffic:
+Manual IPv6 tunnels
+Automatic IPv4-Compatible tunnels
+GRE
+Automatic 6to4 tunnels
+Intra-Site Automatic Tunnel Addressing Protocol (ISATAP) Tunnels
+
 ----------------------------------
+
+17. Name some of the advantages of IPv6.
+
+IPv6 has more addresses that IPv4 (128 bits vs 32 bits).
+IPv6 allows for classless Inter-Domain Routing (CIDR), i.e. to eliminate IP address classes.
+Encryption and IPsec built in (Security)
+Client-side IP address assignment, no need for DHCP
+More Efficient Routing
+
+----------------------------------
+
+Section 3: Subnets
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. What is subnetting? Describe the process of subnetting. Which part of the IP address is used for subnetting?
+
 
 
 
