@@ -570,6 +570,10 @@ DNS Address
 
 14. Explain the term Classless Inter-Domain Routing (CIDR).
 
+https://www.youtube.com/watch?v=Q1U9wVXRuHA
+
+----------------------------------
+
 
 
 
