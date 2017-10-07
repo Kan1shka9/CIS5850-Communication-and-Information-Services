@@ -83,7 +83,8 @@ TCP/IP - packet delivery not guarenteed, horizontal approach, 4 layers
 
 3. Name some of the WAN and LAN related protocols in the lower layer of the TCP/IP Model. Differentiate between the two types of protocols.
 
-Doubt
+LAN Technology -> Ethernet, Token Ring, FDDI
+WAN Technology -> X.25, Frame relay, ATM
 
 ----------------------------------
 
