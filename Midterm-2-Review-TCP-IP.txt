@@ -356,19 +356,110 @@ Host id: The part of an IP address that identifies a host in a network.
 
 ----------------------------------
 
+4. Practice converting decimal numbers into binary numbers and vice versa.
 
+----------------------------------
 
-Doubts
+5. Convert 01001 to its decimal equivalent and convert 14 to its binary equivalent.
 
-Are there any restrictions on the assignments of IP addresses such limiting the use of IP addresses with certain formation of ones and zeros?
+01001 = 9
+14 = 1110
+
+----------------------------------
+
+6. How many classes are there in IPv4 address space?
+
+A, B, C, D and E.
+
+----------------------------------
+
+7. Explain the functions and purpose of the classes A, B, C, D and E.
+
+Classes A, B, and C II addresses are used for commercial purposes.
+Class D IP addresses are used for multicasting.
+Class E IP addresses are used for experimental addresses reserved for future use.
+
+----------------------------------
+
+8. Give the number of networks and hosts that can be supported in classes A, B and C.
+
+Valid number of networks:
+
+Class A= 126
+Class B= 16,384
+Class C= 2,097,152
+
+Valid number of hosts within each network:
+Class A= 16,777,214
+Class B= 65,534
+
+----------------------------------
+
+9. Describe the purpose of the class D address space.
+
+Multicasting
+
+----------------------------------
+
+10. Explain unicasting, multicasting and broadcasting.
+
+Unicasting: delivers one stream from one host another host. Multiple streams travel through the Internet to reach multiple clients separately.
+Multicasting: Delivers a single stream of media to a router at the receiving end. The router multiplies and delivers the stream to local hosts. As such, one stream travels through the Internet thus saving bandwidth.
+Broadcasting: Similar to multicasting, broadcasting sends one stream through the Internet. The destination multiplies and delivers the stream to local hosts regardless of the fact that the hosts do or do not request to receive the broadcast.
+
+----------------------------------
+
+11. Provide all the valid network IDs for class A and class B networks.
+
+Class A: 1.0.0.0 to 126.0.0.0
+Class B: 128.0.0.0 to 191.255.0.0
+Class C: 192.0.0.0 to 223.255.255.0
+
+----------------------------------
+
+12. In class B networks, what bits are always set to 1 and 0?
+
+The first two higher-order bits are always set to 1 and 0 respectively.
+
+----------------------------------
+
+13. Are there any restrictions on the assignments of IP addresses such limiting the use of IP addresses with certain formation of ones and zeros?
+
+All bits cannot be set to all ones, or all zeros
+In class A, Network ID 127 is reserved for loopback function.
+
+----------------------------------
+
+14. What is IPv6? How many bits are there in an IPv6 address?
+
+IPv6
+8 x 16-bit fields
+2001:0000:3238:DFE1:63:0000:0000:FEFB
+Each 16-bit field is represented by its Hexadecimal conversion, separated by a colon (:)
+Provides 4 times more addresses.
+
+----------------------------------
+
+15. Describe the motivation behind developing the IPv6 addressing scheme.
+What are some of the advantages of using IPv6 addresses?
 Can IPv6 addresses be configured automatically by the system? - Yes
 
+IPv6 was developed because IP addresses provided by IPv4 are being totally consumed and new/additional addresses were needed.
+Provides 4 times more addresses.
+http://www.networkcomputing.com/networking/six-benefits-ipv6/1148014746
 More Efficient Routing
 More Efficient Packet Processing
 Directed Data Flows
 Simplified Network Configuration
 Support For New Services
 Security
+
+----------------------------------
+
+16. How does IPv6 interoperate with IPv4? List the tunneling protocols that are used by IPv6 networks to tunnel through IPv4 networks.
+
+----------------------------------
+
 
 
 Subnet Mask Cheat Sheet
