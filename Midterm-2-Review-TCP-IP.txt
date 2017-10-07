@@ -2,21 +2,21 @@ Midterm 2 Review TCP/IP
 
 =========================================================================================================================================
 
-Section 1: Overview of TCP/IP 
+Section 1: Overview of TCP/IP
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-1. What is meant by the TCP/IP suite of protocols? Explain RFC and IETF in relation to this protocol. 
+1. What is meant by the TCP/IP suite of protocols? Explain RFC and IETF in relation to this protocol.
 
-The Internet protocol suite is the conceptual model and set of communications protocols used on the Internet and similar computer networks. 
+The Internet protocol suite is the conceptual model and set of communications protocols used on the Internet and similar computer networks.
 It is commonly known as TCP/IP because the original protocols in the suite are the Transmission Control Protocol (TCP) and the Internet Protocol (IP).
 
 RFC
-Request for Comment 
+Request for Comment
 It is a document published by IETF to define internet related standards, such as TCP/IP.
 
 IETF
-Internet Engineering Task Force 
+Internet Engineering Task Force
 It is a non-profit organization that sets Internet Standards, such as TCP/IP, and publishes the RFCs.
 
 ----------------------------------
@@ -46,7 +46,7 @@ TCP/IP -> 4 layers
      +-------+     +-----+-----+     +-------+
          |            |     |            |
          +------------+     +----...-----+
-   
+
 APSTNDP
 
 - TCP/IP model
@@ -87,14 +87,14 @@ Doubt
 
 ----------------------------------
 
-4. Explain the protocol known as Telnet and its usage. 
+4. Explain the protocol known as Telnet and its usage.
 
 Telnet port - 23
 It is a network protocol that allows a user on one computer to log onto another computer that is part of the same network.
 
 ----------------------------------
 
-5. List some of the upper layer protocols. 
+5. List some of the upper layer protocols.
 
 HTTP
 SMTP
@@ -103,7 +103,7 @@ FTP
 
 ----------------------------------
 
-6. Explain the purpose and function of the following protocols: HTTP, HTTPS, FTP, SMTP, POP3 IMAP, SNMP, TELNET, TCP, UDP and ARP. Briefly describe incoming and outgoing mail protocols. 
+6. Explain the purpose and function of the following protocols: HTTP, HTTPS, FTP, SMTP, POP3 IMAP, SNMP, TELNET, TCP, UDP and ARP. Briefly describe incoming and outgoing mail protocols.
 
 HTTP - 80
 Hypertext Transfer (or Transport) Protocol, the data transfer protocol used on the World Wide Web.
@@ -115,7 +115,7 @@ FTP - 21
 The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
 SMTP - 25
-Simple Mail Transfer Protocol is a TCP/IP protocol used in sending and receiving e-mail. 
+Simple Mail Transfer Protocol is a TCP/IP protocol used in sending and receiving e-mail.
 
 POP3 - 110
 Post Office Protocol 3 is a protocol for receiving email by downloading it to your computer from a mailbox on the server of an Internet service provider.
@@ -124,7 +124,7 @@ IMAP - 143
 IMAP (Internet Message Access Protocol) is a standard email protocol that stores email messages on a mail server, but allows the end user to view and manipulate the messages as though they were stored locally on the end user's computing device(s).
 
 SNMP - 161, 162
-Simple Network Management Protocol (SNMP) is a popular protocol for network management. 
+Simple Network Management Protocol (SNMP) is a popular protocol for network management.
 It is used for collecting information from, and configuring, network devices, such as servers, printers, hubs, switches, and routers on an Internet Protocol (IP) network.
 
 Telnet - 23
@@ -133,14 +133,14 @@ It is a network protocol that allows a user on one computer to log onto another 
 TCP
 Transmission Control Protocol
 Host-to-Host Transport Layer protocol
-One-to-one and connection-oriented reliable protocol (receive acknowledgement). 
-Used in the accurate transmission of large amount of data. 
+One-to-one and connection-oriented reliable protocol (receive acknowledgement).
+Used in the accurate transmission of large amount of data.
 Slower compared to UDP because additional error checking being performed.
 
 UDP
 User Datagram Protocol
 Host-to-Host Transport Layer protocol
-One-to-one or one-to-many, connectionless and unreliable protocol. 
+One-to-one or one-to-many, connectionless and unreliable protocol.
 
 ARP
 Address Resolution Protocol
@@ -178,7 +178,7 @@ Resolves domain names to IP Addresses and vice versa
 
 ----------------------------------
 
-9. Compare and contrast TCP with UDP. Describe one or more scenarios where one of the protocols would be more appropriate than the other. When is UDP Preferred for communication? 
+9. Compare and contrast TCP with UDP. Describe one or more scenarios where one of the protocols would be more appropriate than the other. When is UDP Preferred for communication?
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 |                                                                                TCP                                                                                 |                                                                       UDP                                                                       |
@@ -215,12 +215,157 @@ SMTP
 
 Connection-Oriented protocol
 They perform handshaking to set up an end-to-end connection
-Connection-Oriented systems can only work in bi-directional communications environments. 
+Connection-Oriented systems can only work in bi-directional communications environments.
 Connection-oriented protocol services are often reliable network services, that provide acknowledgment after successful delivery.
 
-Connectionless protocol 
+Connectionless protocol
 Usually achieved by transmitting information in one direction, from source to destination without checking to see if the destination is still there, or if it is prepared to receive the information.
 IP, UDP, ICMP, DNS, TFTP and SNMP are examples of connectionless protocols in use on the Internet.
 Connectionless transmissions are considered unreliable because the service provider usually cannot guarantee that there will be errors in the delivery of the packet.
 
 ----------------------------------
+
+11. Files can be downloaded using the HTTP protocol or the FTP protocol. Which one is better suited for file downloads?
+
+HTTP is more responsive for request-response of small files, but FTP may be better for large files if tuned properly.
+FTP used to be generally considered faster.
+FTP requires a control channel and state be maintained besides the TCP state but HTTP does not.
+There are 6 packet transfers before data starts transferring in FTP but only 4 in HTTP.
+
+----------------------------------
+
+12. Name the incoming and outgoing protocols for an email application such as Outlook?
+
+Doubt
+
+----------------------------------
+
+13. Explain the terms connection-oriented reliable protocol and connection-less unreliable protocol.
+
+Same
+
+----------------------------------
+
+14. List the basic types of ISDN services. What is the difference between a data channel and a service channel? Explain in terms of B and D channels.
+
+Integrated Services Digital Network has multiple channels, allows for transmission of data, voice, video and type of services over traditional circuit lines (telephone network).
+
+ISDN has two B-channels and one D-Channel.
+
+B Channel:
+is a data channel used to transmit data and voice.
+B channel is circuit switched (static path).
+
+D channel:
+is a services channel used for monitoring and control of the data transmission.
+D channel is packet switched (dynamic path).
+
+----------------------------------
+
+15. Describe the term Bandwidth on Demand or BOND.
+
+Inverse multiplexing is also known as bonding when it is done dynamically.
+Multiple communication lines will be combined on as needed basis for higher speeds and bandwidth (on demand).
+
+----------------------------------
+
+16. Explain the application of the SNMP protocol. How does it related to manageable network devices?
+
+SNMP: Simple Network Management Protocol.
+Application Layer protocol.
+Facilitates the management of SNMP compliant routers, bridges, switches etc. by enabling the collection and exchange of network management information.
+Used by network management utilities to manage network devices from a remote monitor.
+For example, a manageable hub that supports SNMP (has SNMP supporting software burnt within itself) can be managed from a remote location using a SNMP based LAN management software.
+
+----------------------------------
+
+17. What is the purpose of the ARP protocol?
+
+Address Resolution Protocol.
+Internet Layer protocol.
+Resolves IP addresses to Mac addresses
+
+----------------------------------
+
+18. Name some application layer protocols and their corresponding de facto port numbers?
+
++--------+----------+
+| HTTP   |       80 |
+| HTTPS  |      443 |
+| FTP    |       21 |
+| SMTP   |       25 |
+| POP3   |      110 |
+| IMAP   |      143 |
+| SNMP   | 161, 162 |
+| Telnet |       23 |
+| DNS    |       53 |
++--------+----------+
+
+----------------------------------
+
+19. Group the protocols into application protocols and network infrastructure protocols.
+
+Application protocols: Telnet, FTP, SMTP, POP3, IMAP4, HTTP, HTPS, SNMP, DNS, RIP
+Network infrastructure protocols: Ethernet, Token Rings, Frame Relay, ATM
+
+----------------------------------
+
+20. When scanning a port, a port can be in any one of three states. What are the states? An example of a state is “Open”.
+Relate each state to the presence of software and hardware firewalls on the network.
+
+Open
+Closed
+Stealth
+
+Doubt
+
+----------------------------------
+
+Section 2: IP Addressing Explored
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. What are octets? How many octets are there in an IPv4 address?
+
+Octet = 8 bits
+IPv4 address -> 4 octets
+32 bit address
+
+----------------------------------
+
+2. Describe the basic format of an IPv4 and an IPv6 protocol.
+
+IPv4
+4 octets - 32 bits
+Logical components: Network ID and Host ID
+10101111 11001100 10000001 00110011 = 175. 204.129.51
+
+IPv6
+8 x 16-bit fields
+2001:0000:3238:DFE1:63:0000:0000:FEFB
+Each 16-bit field is represented by its Hexadecimal conversion, separated by a colon (:)
+
+----------------------------------
+
+3. What are the two components of the IP address? Explain the terms network ID and host ID.
+
+
+Doubts
+
+Are there any restrictions on the assignments of IP addresses such limiting the use of IP addresses with certain formation of ones and zeros?
+Can IPv6 addresses be configured automatically by the system? - Yes
+
+More Efficient Routing
+More Efficient Packet Processing
+Directed Data Flows
+Simplified Network Configuration
+Support For New Services
+Security
+
+
+Subnet Mask Cheat Sheet
+https://www.aelius.com/njh/subnet_sheet.html
+
+
+How DNS works
+https://www.verisign.com/en_US/website-presence/online/how-dns-works/index.xhtml
