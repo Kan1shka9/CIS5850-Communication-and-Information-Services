@@ -483,6 +483,94 @@ Section 3: Subnets
 
 1. What is subnetting? Describe the process of subnetting. Which part of the IP address is used for subnetting?
 
+Subnetting is the division of a network into smaller network, called subnets.
+Some of the Host IDs within the network IP address are used for creating subnet IDs.
+Some of the higher-order bits of the HostID will be allocated to construct the subnets.
+
+----------------------------------
+
+2. List some of the reasons for subnetting.
+
+A class A or class B organization may not need all its host IP addresses.
+So it can subdivide its network into smaller, such as class C subnets, and give it away to other organizations.
+Sometimes Subnetting can also be used for easier and more efficient management of hardware as means to deal with hardware management limitations.
+
+----------------------------------
+
+3. What is a subnet mask? State its purpose.
+
+Subnet mask is a numeric parameter of a subnet used to identify the Network ID of a destination IP address by performing a bitwise AND operation between the subnet mask and the destination IP Address.
+This AND-ing operation is known as the masking operation.
+Subnet mask is used for routing a data packet.
+It helps identify whether the data packet is intended for the local subnet (local host) or should be sent out to another subnet (remote host).
+
+----------------------------------
+
+4. Explain the ANDing process. Indicate the different outcomes of the Boolean Operator A=B+C.
+
+----------------------------------
+
+5. How does a host determine its own subnet ID?
+
+IP AND SUBNET MASK -> subnet ID
+
+----------------------------------
+
+6. What is the result of ANDing 130.182.215.12 with 255.255.255.0?
+
+----------------------------------
+
+7. Study in detail the class example used for explaining the subnetting process.
+How many usable subnets are available in this example? - 6
+Provide all the subnet IDs of the usable subnets. - 195.175.25.32, 195.175.25.64, 195.175.25.96, 195.175.25.128, 195.175.25.160, 195.175.25.192
+How may hosts can be supported in each subnet? - 30
+What is the subnet mask of the subnets created? 255.255.255.224
+
+----------------------------------
+
+8. Indicate the first, second and last usable subnet IDs in the above case.
+
+195.175.25.32, 195.175.25.64, 195.175.25.192
+
+----------------------------------
+
+9. What would be the network ID of the host identified by the IP address 195.170.25.33?
+
+195.170.25
+
+----------------------------------
+
+10. How does a host determine whether the destination address is within its own subnet or outside of its subnet?
+Explain the calculations involved in determining the destination subnet ID.
+
+----------------------------------
+
+11. Indicate the total number of useable subnets and the hosts per subnet in the class example.
+
+How many usable subnets are available in this example? - 6
+How may hosts can be supported in each subnet? - 30
+
+----------------------------------
+
+12. Consider the subnet notation 130.182.215.0/26.
+In this case, what is the subnet mask and the total number of clients that could be supported in each subnet?
+
+255.255.255.192
+64 hosts
+----------------------------------
+
+13. What are the parameter values that should be provided when configuring a static IP address?
+
+IP Address
+Subnet Mask
+Default Gateway
+DNS Address
+
+----------------------------------
+
+14. Explain the term Classless Inter-Domain Routing (CIDR).
+
+
 
 
 
