@@ -869,7 +869,10 @@ HOSTNAME + Primary DNS Suffix
 
 9. Give a few different TCP/IP commands that could be used for obtaining the host name of a computer.
 
-Nbtstat, nslookup, ipconfig
+ipconfig
+hostname
+nslookup <IP Address>
+nbtstat -A <IP Address>
 
 ----------------------------------
 
