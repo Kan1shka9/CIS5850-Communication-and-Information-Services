@@ -847,7 +847,7 @@ One example would be to ping the IP address of a computer.
 
 7. List all the useful information displayed in response to the IPCONFIG /all command.
 Can the MAC address be obtained from the information displayed?
-What is a MAC address? Is it a unique address for each computer on the Internet? -YES
+What is a MAC address? Is it a unique address for each computer on the Internet? - YES
 
 IP Address
 Subnet
