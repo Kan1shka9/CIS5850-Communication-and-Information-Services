@@ -575,13 +575,413 @@ https://www.youtube.com/watch?v=Q1U9wVXRuHA
 
 ----------------------------------
 
+Host Name Resolution: DNS and WINs
 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+1. What is a TCP/IP host name? What is a Windows name?
 
+TCP/IP host names
+www.google.com -> FQDN
+www -> hostname
+google.com -> domain
+mymail.someclg.com -> FQDN
+mymail -> hostname
+someclg.com -> domain
 
-Subnet Mask Cheat Sheet
-https://www.aelius.com/njh/subnet_sheet.html
+WINS names -> NetBIOS names
+The NetBIOS name is also known as a NetBIOS computer name.
+For example, a NetBIOS name might be Client1.
 
+----------------------------------
+
+2. Provide a few different types of host names, such as for example the TCP/IP name, that could be resolved to IP addresses.
+
+www.calstatela.edu <-> 130.182.1.60
+182.54.94.97 <-> rhino.acme.com
+38.25.63.10 <-> *.acme.com
+
+----------------------------------
+
+3. Explain the purpose of DNS? How is a FQDN (Fully Qualified Domain Name) resolved?
+
+DNS -> IP to domain name and vice versa resolution
+How DNS works
+https://www.verisign.com/en_US/website-presence/online/how-dns-works/index.xhtml
+
+----------------------------------
+
+4. How can an IP address of a website be obtained? Indicate the use of the Ping command.
+
+➜  ~ ping www.google.com
+PING www.google.com (173.194.66.105): 56 data bytes
+64 bytes from 173.194.66.105: icmp_seq=0 ttl=38 time=100.860 ms
+64 bytes from 173.194.66.105: icmp_seq=1 ttl=38 time=192.618 ms
+
+----------------------------------
+
+5. Explain the purpose of the HOSTS and LMHOSTS files. Show a sample entry in the files.
+
+HOSTS file -> local DNS
+LMHOSTS file -> NetBIOS name resolution
+
+----------------------------------
+
+6. Describe the entry 127.0.0.1 made against the label “localhost”. What is the purpose of pinging 127.0.0.1 or localhost?
+
+Check if NIC card is working
+
+Localhost is a hostname that means this computer.
+It is used to access the network services that are running on the host via its loopback network interface.
+Using the loopback interface bypasses any local network interface hardware.
+The local loopback mechanism is useful for testing software during development, independently of any networking configurations.
+For example, loopback may be used to direct a locally running web browser to http://localhost to display a local html file.
+
+----------------------------------
+
+7. Explain the process of resolving a FQDN to an IP address bearing in mind that the first file that would be accessed for the resolution is the HOSTS file.
+Thereafter, multiple DNS servers may be accessed until the FQDN is resolved to an IP address. Describe this process.
 
 How DNS works
 https://www.verisign.com/en_US/website-presence/online/how-dns-works/index.xhtml
+
+----------------------------------
+
+8. What is the domain name of www.ganesan.com?
+
+ganesan.com
+
+----------------------------------
+
+9. Consider a FQDN ganesan.calstatela.edu. In this case, list the subdomain or host name of the server and the primary domain name?
+
+Subdomain/Hostname -> ganesan
+Primary Domain Name -> calstatela.edu
+
+----------------------------------
+
+10. Is DNS a protocol and a service as well?
+
+Yes - protocol in TCP/IP application layer
+
+----------------------------------
+
+11. What is the purpose of an agency such as the InterNIC?
+
+Organization primarily responsible for Domain Name System (DNS) domain name allocations and X.500 directory services
+
+----------------------------------
+
+12. How is a domain name registered with GoDaddy?
+
+----------------------------------
+
+TCP/IP in the Windows Environment
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. The TCP/IP suite of protocols is installed when an operating system is installed on a computer.
+Name some of the important protocols that are installed as part of this suite of protocols?
+
+----------------------------------
+
+2. What is the purpose of Telnet? Name the typical use for the FTP protocol.
+
+Telnet -> Remote connect using CLI
+FTP -> used for file transfer
+
+----------------------------------
+
+3. List the two IP related parameters that should be defined at a minimum if the computer in a subnet is not required to go beyond a router to have Internet access.
+In other words, the packets, in this case, need not leave the subnet.
+The network communication, in this case, will be limited to the computers within the stand-alone network.
+
+IP Address
+Subnet Mask
+
+----------------------------------
+
+4. List the most commonly set parameters when configuring the IP address of a client?
+
+IP Address
+Subnet Mask
+Gateway
+Primary DNS
+Secondary DNS
+
+----------------------------------
+
+5. Explain the difference between a static IP address and a dynamic IP address.
+
+Static IP -> manually assigned, does not change, Web Server
+Dynamic IP -> dynamically allocated, changes, Client inside a NAT
+
+----------------------------------
+
+6. What is a gateway? Does the IP address of a gateway refer to the IP address of the router?
+
+Gateway
+Device where the packers leave the local network
+
+Sometimes
+
+----------------------------------
+
+7. Define the term Fully Qualified Domain Name or FQDN?
+Give an example of an FQDN. Explain the role played by the host name and the domain name in defining the FQDN.
+
+www.google.com -> FQDN
+www -> hostname
+google.com -> domain
+mymail.someclg.com -> FQDN
+mymail -> hostname
+someclg.com -> domain
+
+----------------------------------
+
+8. Can a computer have multiple IP addresses? What is the purpose of assigning multiple addresses to a computer?
+
+Multiple NIC cards -> multiple IP addresses
+load balancing , failover, to configure server as router , to connect 2 diff networks
+
+----------------------------------
+
+9. Is it possible to have multiple Network Interfaced Cards or NICs in a computer? Describe the reasons for having multiple NICs in a computer.
+
+----------------------------------
+
+10. Explain the role played by the WINs server.
+
+NetBIOS names to IP resolution
+
+----------------------------------
+
+11. What is the de facto port number of the http protocol?
+
+80
+
+----------------------------------
+
+12. Describe the purpose of setting the suffix search order in the advanced properties of the IP address window.
+For example, an entry in the suffix search order will be calstatela.edu.
+
+An entry in the suffix search order will be calstatela.edu new computer is attached automatically registered to DNS
+
+----------------------------------
+
+TCP/IP Commands
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. Explain the purpose of the Ping command and its possible uses.
+
+Verifies IP-level connectivity to another TCP/IP computer by sending Internet Control Message Protocol (ICMP) Echo Request messages.
+The receipt of corresponding Echo Reply messages are displayed, along with round-trip times.
+Ping is the primary TCP/IP command used to troubleshoot connectivity, reachability, and name resolution.
+You can use ping to test both the computer name and the IP address of the computer.
+If pinging the IP address is successful, but pinging the computer name is not, you might have a name resolution problem.
+In this case, ensure that the computer name you are specifying can be resolved through the local Hosts file, by using Domain Name System (DNS) queries, or through NetBIOS name resolution techniques.
+
+----------------------------------
+
+2. Describe an approach to obtaining a description of all the TCP/IP commands. Can it be obtained from the Internet?
+
+https://technet.microsoft.com/en-us/library/bb727023.aspx
+https://www.pluralsight.com/blog/it-ops/top-7-tcpip-utilities-every-networking-pro-should-know
+
+----------------------------------
+
+3. Give a sample application of the Ping command? What is the result of pinging 127.0.0.1?
+
+➜  ~ ping 127.0.0.1
+PING 127.0.0.1 (127.0.0.1): 56 data bytes
+64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.052 ms
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.085 ms
+64 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.080 ms
+
+----------------------------------
+
+4. Explain the term loopback.
+
+Loopback is a communication channel with only one endpoint.
+TCP/IP networks specify a loopback that allows client software to communicate with server software on the same computer.
+Users can specify an IP address, usually 127.0.0.1, which will point back to the computer's TCP/IP network configuration.
+The range of addresses for loopback functionality is the range of 127.0.0.0 to 127.255.255.255.
+Similar to ping, loopback enables a user to test one's own network to ensure the IP stack is functioning properly.
+
+----------------------------------
+
+5. Describe various applications of the IPCONFIG command.
+In particular, state the purpose of using different switches with the command.
+An example of a switch is /all or /release.
+
+This diagnostic command displays all current TCP/IP network configuration values.
+This command is useful on computers running DHCP because it enables users to determine which TCP/IP configuration values have been configured by DHCP.
+If you enter only ipconfig without parameters, the response is a display of all of the current TCP/IP configuration values, including IP address, subnet mask, and default gateway.
+/all Produces a full display.
+Without this switch, ipconfig displays only the IP address, subnet mask, and default gateway values for each network card.
+renew [adapter] Renews DHCP configuration parameters.
+This option is available only on computers running the DHCP Client service.
+To specify an adapter name, type the adapter name that appears when you use ipconfig without parameters.
+release [adapter] Releases the current DHCP configuration. This option disables TCP/IP on the local computer and is available only on DHCP clients.
+
+----------------------------------
+
+6. What are some of the client identification parameters that could be used with the ping command?
+One example would be to ping the IP address of a computer.
+
+-t Pings the specified host until interrupted.
+-a Resolves addresses to host names
+-n count Sends the number of ECHO packets specified by count.The default is 4.
+-l length Sends ECHO packets containing the amount of data specified by length. The default is 64 bytes; the maximum is 8192.
+-f Sends a Do Not Fragment flag in the packet. The packet will not be fragmented by gateways on the route.
+-i ttl Sets the time to live field to the value specified by ttl.
+-v tos Sets the type of service field to the value specified by tos.
+-r count Records the route of the outgoing packet and the returning packet in the record route field. A minimum of 1 to a maximum of 9 hosts must be specified by count.
+-s count Specifies the timestamp for the number of hops specified by count.
+-j host-list Routes packets via the list of hosts specified by host-list. Consecutive hosts can be separated by intermediate gateways (loose source routed). The maximum number allowed by IP is 9.
+-k host-list Routes packets via the list of hosts specified by host-list. Consecutive hosts cannot be separated by intermediate gateways (strict source routed). The maximum number allowed by IP is 9.
+-w timeout Specifies a timeout interval in milliseconds. destination-list Specifies the remote hosts to ping
+
+----------------------------------
+
+7. List all the useful information displayed in response to the IPCONFIG /all command.
+Can the MAC address be obtained from the information displayed?
+What is a MAC address? Is it a unique address for each computer on the Internet? -YES
+
+IP Address
+Subnet
+Gateway
+MAC Address
+
+hostname, primary DNS suffix, DHCP, DNS servers, MAC address, IP address , netbios – TCP/IP
+A MAC Address, also known as a Physical Address or Burned-in-Address, is just a device identifier.
+It’s a long number, 6 bytes to be exact
+Usually written in base-16 (Hexadecimal) and represents a unique device address for the purposes of communicating with other devices on a network. – 48 bit
+
+----------------------------------
+
+8. How can a FQDN of a computer be determined from the information displayed in response to the IPCONFIG /all command.
+
+HOSTNAME + Primary DNS Suffix
+
+----------------------------------
+
+9. Give a few different TCP/IP commands that could be used for obtaining the host name of a computer.
+
+Nbtstat, nslookup, ipconfig
+
+----------------------------------
+
+10. State the purpose and functions of each of the following TCP/IP commands: nslookup, tracert, finger and arp.
+
+finger -- user information lookup program
+nslookup - query Internet name servers interactively
+traceroute -- print the route packets take to network host
+arp -- address resolution display and control
+
+----------------------------------
+
+11. What is the purpose of the ARP protocol?
+
+Short for Address Resolution Protocol, a network layer protocol used to convert an IP address into a physical address (called a DLC address), such as an Ethernet address.
+A host wishing to obtain a physical address broadcastsan ARP request onto the TCP/IP network.
+
+IP <-> MAC
+
+----------------------------------
+
+12. Explain the information displayed in response to the nslookup, tracert, finger and arp commands
+
+➜  ~ nslookup www.google.com
+Server:		192.168.1.1
+Address:	192.168.1.1#53
+
+Non-authoritative answer:
+Name:	www.google.com
+Address: 173.194.175.99
+Name:	www.google.com
+Address: 173.194.175.105
+Name:	www.google.com
+Address: 173.194.175.106
+Name:	www.google.com
+Address: 173.194.175.147
+Name:	www.google.com
+Address: 173.194.175.103
+Name:	www.google.com
+Address: 173.194.175.104
+
+➜  ~
+
+****
+
+➜  ~ finger james
+finger: james: no such user
+➜  ~
+
+****
+
+➜  ~ arp -a
+? (192.168.1.1) at a0:63:91:f0:cc:4b on en0 ifscope [ethernet]
+? (192.168.1.2) at bc:9f:ef:69:35:19 on en0 ifscope [ethernet]
+? (192.168.1.18) at e4:f8:9c:7b:16:82 on en0 ifscope [ethernet]
+? (192.168.1.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
+? (224.0.0.251) at 1:0:5e:0:0:fb on en0 ifscope permanent [ethernet]
+? (239.255.255.250) at 1:0:5e:7f:ff:fa on en0 ifscope permanent [ethernet]
+broadcasthost (255.255.255.255) at ff:ff:ff:ff:ff:ff on en0 ifscope [ethernet]
+➜  ~
+
+****
+
+➜  ~ traceroute www.google.com
+traceroute: Warning: www.google.com has multiple addresses; using 173.194.175.99
+traceroute to www.google.com (173.194.175.99), 64 hops max, 52 byte packets
+ 1  192.168.1.1 (192.168.1.1)  1.235 ms  0.935 ms  1.079 ms
+ 2  * dtr03mtpkca-tge-0-7-0-1.mtpk.ca.charter.com (96.34.101.197)  14.450 ms  12.441 ms
+ 3  crr01mtpkca-bue-220.mtpk.ca.charter.com (96.34.102.136)  12.385 ms  17.693 ms  13.049 ms
+ 4  bbr01stcdmn-tge-0-1-0-3.stcd.mn.charter.com (96.34.2.212)  16.178 ms  13.538 ms  20.102 ms
+ 5  bbr01ashbva-tge-0-1-0-1.ashb.va.charter.com (96.34.3.139)  11.459 ms  13.874 ms *
+ 6  74.125.51.245 (74.125.51.245)  15.923 ms
+    72.14.219.250 (72.14.219.250)  16.723 ms  15.365 ms
+ 7  108.170.247.147 (108.170.247.147)  16.159 ms
+    108.170.247.179 (108.170.247.179)  14.430 ms
+    108.170.247.212 (108.170.247.212)  14.115 ms
+ 8  108.170.237.112 (108.170.237.112)  15.454 ms
+    108.170.234.25 (108.170.234.25)  20.312 ms  34.573 ms
+ 9  108.170.236.254 (108.170.236.254)  61.016 ms
+    108.170.247.244 (108.170.247.244)  25.554 ms
+    108.170.247.179 (108.170.247.179)  19.871 ms
+10  209.85.240.17 (209.85.240.17)  89.603 ms
+    108.170.234.37 (108.170.234.37)  19.514 ms
+    209.85.249.44 (209.85.249.44)  91.927 ms
+11  216.239.40.131 (216.239.40.131)  137.090 ms  97.807 ms  100.046 ms
+12  209.85.240.17 (209.85.240.17)  106.414 ms
+    209.85.249.44 (209.85.249.44)  98.642 ms
+    209.85.240.17 (209.85.240.17)  71.486 ms
+13  216.239.40.119 (216.239.40.119)  322.238 ms *  97.609 ms
+14  * * 216.239.41.34 (216.239.41.34)  110.710 ms
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+^C
+➜  ~
+
+----------------------------------
+
+13. What is a hop? Which command displays the route of a packet in terms of hops when the packet hops to the destination computer?
+
+A hop is the distance a data packet travels from one node to the other.
+A hop is one portion of the path between source and destination.
+Data packets pass through bridges, routers and gateways as they travel between source and destination.
+Each time packets are passed to the next network device, a hop occurs.
+The hop count refers to the number of intermediate devices through which data must pass between source and destination.
+The ping or traceroute commands can be used to see how many router hops it takes to get from one host to another.
+
+----------------------------------
+
+Subnet Mask Cheat Sheet
+https://www.aelius.com/njh/subnet_sheet.html
