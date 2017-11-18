@@ -1,0 +1,429 @@
+Final Review
+
+=========================================================================================================================================
+
+Section 1: Windows Server Installation and Management
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Active Directory
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+1. Explain the concept of Active Directory.
+
+Active Directory is Microsoft's trademarked directory service
+Active Directory is a centralized and standardized system that automates network management of user data, security, and distributed resources, and enables interoperation with other directories.
+Active Directory is designed especially for distributed networking environments.
+
+Active Directory features include:
+Support for the X.500 standard for global directories
+The capability for secure extension of network operations to the Web
+A hierarchical organization that provides a single point of access for system administration (management of user accounts, clients, servers, and applications, for example) to reduce redundancy and errors
+An object-oriented storage organization, which allows easier access to information
+Support for the Lightweight Directory Access Protocol (LDAP) to enable inter-directory operability
+Designed to be both backward compatible and forward compatible
+
+----------------------------------
+
+2. What is the purpose of deploying Active Directory?
+
+Basic Functions of Microsoft Active Directory.
+Active Directory is a distributed directory service included with Microsoft Windows Server operating systems.
+Active Directory enables centralized, secure management of an entire network, which might span a building, a city, or multiple locations throughout the world.
+
+----------------------------------
+
+3. Differentiate between a local server and a domain controller.
+
+A local area network (LAN) server is a program (and by implication usually the computer it runs in) that "serves" the resources
+(files, storage, application programs, printers, and other devices) for a number of attached workstations.
+
+A domain controller is a server that is running a version of the Windows Server operating system and has Active Directory Domain Services installed.
+In Windows Server 2008 R2 and Windows Server 2008, the directory service is named Active Directory Domain Services.
+
+----------------------------------
+
+4. Explain the difference between a tree and a forest in Active Directory.
+
+The forest, tree, and domain are the logical divisions in an Active Directory network.
+
+A tree is a collection of one or more domains and domain trees in a contiguous namespace, linked in a transitive trust hierarchy.
+
+At the top of the structure is the forest. A forest is a collection of trees that share a common global catalog, directory schema, logical structure, and directory configuration.
+The forest represents the security boundary within which users, computers, groups, and other objects are accessible.
+
+Forest -> Group of trees, Same schema, GC
+Trees -> Group of domains, Same namespace, trust
+Domain -> Own DC, AD
+
+----------------------------------
+
+Server Installation
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+5. Study the step-by-step procedure for installing a network server.
+
+https://www.youtube.com/watch?v=lgOlK9sgY08
+
+----------------------------------
+
+6. Name the latest version of the windows 2012 server operating system and the different editions of the server operating system.
+
+Full Installation / Server Core Installation
+Windows Server 2016 Standard
+Windows Server 2016 Enterprise
+Windows Server 2016 Datacenter
+
+----------------------------------
+
+7. Name the Windows 2012 Server edition used in the lab.
+
+Windows Server 2016 Datacenter
+
+----------------------------------
+
+8. Explain the use of dual-boot for booting different operating systems and the significance of the booting order.
+
+A dual boot system is a computer that can boot into two different operating systems.
+While most computers automatically load a specific operating system (OS) at startup, a dual boot system allows you to choose what OS you would like to load.
+
+Booting order lets you choose the order of booting such as HDD, CD-ROM, USB which will let you boot into a different OS.
+
+----------------------------------
+
+9. How can one change the booting order?
+
+BIOS -> Storage -> Boot Order -> Save and Exit
+
+----------------------------------
+
+10. Explain the primary difference between the FAT32 and NTFS 5.0 file systems.
+
+https://www.guidingtech.com/11205/difference-between-ntfs-and-fat-32-file-systems/
+
+----------------------------------
+
+11. Describe the purpose of partitioning a disk? Can a partition be used entirely for data? - Yes
+
+Disk partitioning or disk slicing is the creation of one or more regions on a hard disk or other secondary storage, so that an operating system can manage information in each region separately.
+Partitioning is typically the first step of preparing a newly manufactured disk, before any files or directories have been created.
+
+----------------------------------
+
+12. Name the different types of disk partitions? Examples include the primary and extended partitions. Where is the operating system normally installed?
+
+primary partitions
+extended partitions
+logical drives
+
+http://ccm.net/contents/631-partition-partitioning-a-hard-drive
+
+----------------------------------
+
+13. How many accounts are created when an operating system is installed for the first time?
+
+Server - Administrator and Guest
+Workstations - Local User
+
+----------------------------------
+
+14. Describe the procedure for creating a user account the Windows 2012 Server?
+
+https://technet.microsoft.com/en-us/library/cc732336(v=ws.11).aspx#BKMK_winui
+https://www.youtube.com/watch?v=Ly6x8aL36Wc
+
+Start -> Control Panel -> Administrative Tools -> Active Directory Users and Computers -> Users -> Right Click -> New -> User
+
+----------------------------------
+
+15. What are the different types of pre-built user groups in Windows 2012? Examples include Administrator, Backup Operator, Account Manager privileges.
+
+https://msdn.microsoft.com/en-us/library/bb726980.aspx
+
+Account Operators, Administrators, Backup Operators, Guests, Power Users, Pre-Windows 2000 Compatible Access, Print Operators, Replicator, Server Operators, Users
+
+----------------------------------
+
+16. Explain the actions a person can perform as an Administrator, a Backup Operator and an Account Manager.
+
+https://technet.microsoft.com/en-us/library/cc700835.aspx
+
+Administrator
+This group has complete control over all domain controllers and all directory content stored in the domain, and it can change the membership of all administrative groups in the domain.
+It is the most powerful service administrative group.
+
+Backup Operator
+By default, this built-in group has no members. It can perform backup and restore operations on domain controllers.
+
+Account Manager / Account Operators
+By default, this built-in group has no members. It can create and manage users and groups in the domain, but it cannot manage service administrator accounts.
+As a best practice, do not add members to this group, and do not use it for any delegated administration.
+
+----------------------------------
+
+17. Study the different components of a server management console. The management console is abbreviated as MMC to mean Microsoft Management Console.
+
+https://en.wikipedia.org/wiki/Microsoft_Management_Console
+
+Microsoft Management Console (MMC) is a component of Windows 2000 and its successors that provides system administrators and advanced users an interface for configuring and monitoring the system.
+The management console can host Component Object Model components called snap-ins.
+
+----------------------------------
+
+18. What is the purpose of an event viewer?
+
+https://en.wikipedia.org/wiki/Event_Viewer
+
+Application
+Security
+system
+IE
+
+----------------------------------
+
+19. What are the different color codes that can be attributed to an event? What do color codes such as blue or red mean?
+
+Blue = info
+Yellow = warning
+Red = error
+
+----------------------------------
+
+20. How is a critical error marked in the Event Viewer?
+
+Red
+
+----------------------------------
+
+21. What are some of the usages of the Device Manager?
+
+Device Manager is an extension of the Microsoft Management Console that provides a central and organized view of all the Microsoft Windows recognized hardware installed in a computer.
+Device Manager is used to manage the hardware devices installed in a computer like hard disk drives, keyboards, sound cards, USB devices, and more.
+
+----------------------------------
+
+22. Can a device manager be used for troubleshooting the different component of server?
+
+If hardware components then "Yes"
+
+----------------------------------
+
+Windows Server Users and Group
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+23. List some of the user groups that are already built into the Windows 2012 server.
+
+https://msdn.microsoft.com/en-us/library/bb726980.aspx
+
+Account Operators, Administrators, Backup Operators, Guests, Power Users, Pre-Windows 2000 Compatible Access, Print Operators, Replicator, Server Operators, Users
+
+----------------------------------
+
+24. Which user has the highest privilege in managing a server?
+
+Administrator
+
+----------------------------------
+
+25. List a few user groups built into the Windows 2012 server operating system. Examples include groups such as the administrator, backup operator, server operator etc.
+
+https://msdn.microsoft.com/en-us/library/bb726980.aspx
+
+Account Operators, Administrators, Backup Operators, Guests, Power Users, Pre-Windows 2000 Compatible Access, Print Operators, Replicator, Server Operators, Users
+
+----------------------------------
+
+26. Explain the purpose of creating a group and assigning users to a particular group. Is it a better way of managing a large number of users?
+
+It a better way of managing a large number of users
+
+----------------------------------
+
+Server Configuration and Management
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+27. Study some of the server management functions. In particular, look at the different options that are available under the Computer Management MMC.
+Server management enables functions such as viewing the events, sharing the resources and managing the devices etc.
+
+----------------------------------
+
+28. What is meant by a file server role?
+
+The File Services server role in the Windows Server 2008 operating system provides technologies that help manage storage, enable file replication, manage shared folders, ensure fast file searching, and enable access for UNIX client computers.
+
+----------------------------------
+
+29. Differentiate between roles, features and services.
+
+Roles as major functions of the server and Features as smaller add-on packages.
+Whether it is a role or a feature, these are all Microsoft Windows 2008 add-ons, not 3rd party applications.
+
+Roles - AD/DC, DNS, DHCP, File, Print, NAP, Terminal Server, IIS, WDS, WSS
+Features - .NET, Bitlocker Encryption, BITS, Remote Assistance, SMTP Server, SNMP, telnet server & client, failover, NLB, TFTP, Windows Server Backup, WINS, Powershell
+
+Roles
+A server role is a set of software programs that, when they are installed and properly configured, lets a computer perform a specific function for multiple users or other computers within a network.
+
+Services
+Services are software programs that provide the functionality of a role.
+When you install a role, you can choose which role services the role provides for other users and computers in your enterprise
+
+Features
+Features are software programs that, although they are not directly parts of roles, can support or augment the functionality of one or more roles, or improve the functionality of the server, regardless of which roles are installed.
+
+----------------------------------
+
+30. Explain the purpose and function of services.
+
+----------------------------------
+
+31. Give some examples of commercially available media servers and web servers.
+Examples of commercial web servers include the IIS server or service and the Apache server.
+
+Web Server - Apache HTTP Server, NGINX, IIS
+
+----------------------------------
+
+32. Name a web server that can be installed on a Windows server. What are some of the advantages of using an Apache server?
+
+Web server that can be installed on a Windows server - Apache HTTP Server, IIS
+
+Apache server
+A very long history of reliability and performance.
+Mass adoption means there is a LOT of documentation out there and it is very easy to get help with any trouble you might run in to.
+It is free and commercial friendly - no licensing fees or costs.
+It will run on pretty much any OS (Linux, Windows and MacOS)
+It is actively maintained.
+It is one of the most feature rich web servers available.
+
+----------------------------------
+
+33. Name a few media servers and web servers that can be installed on the Windows operating system and on the Unix operating system.
+
+Web Server - Apache HTTP Server, NGINX
+
+----------------------------------
+
+34. Can a server be managed remotely? If so, what is the procedure to enable the server to be managed remotely?
+
+Server manager -> Local Server -> Properties -> Remote management -> Enable remote management of this server from other computers
+
+----------------------------------
+
+Managing services and applications
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+35. What is meant by stopping, starting and restarting a service?
+
+----------------------------------
+
+36. What is the procedure for starting, stopping and pausing a service?
+
+services.msc -> Right click on service -> Automatic, Manual, Disabled
+
+----------------------------------
+
+37. What are the different startup options that are available for a service?
+
+Automatic, Manual, Disabled
+
+----------------------------------
+
+38. Explain how a telnet server and a telnet client can be activated on a computer.
+
+Telnet Client
+Server Manager -> Manage -> Add Roles and Features -> Select Features -> Telnet Client -> Install
+
+Telnet Server
+services.msc -> telnet -> Automatic/Manual/Disabled
+
+----------------------------------
+
+39. How are the services managed? Can a service be set to start automatically? - Yes
+
+https://www.howtogeek.com/school/using-windows-admin-tools-like-a-pro/lesson8/
+
+----------------------------------
+
+40. Name the different options available to start a service. Consider the settings such as Automatic and Manual in this case.
+
+services.msc -> <service_name> -> Automatic/Manual/Disabled
+
+----------------------------------
+
+Server Storage Management
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+41. Names some of the server storage management features that are available in the Windows 2012 OS. An example is the disk defragmentation process.
+
+Disk Cleanup and Disk Defragmenter
+
+----------------------------------
+
+42. What is meant by partitioning a disk?
+
+Disk partitioning or disk slicing is the creation of one or more regions on a hard disk or other secondary storage, so that an operating system can manage information in each region separately.
+Partitioning is typically the first step of preparing a newly manufactured disk, before any files or directories have been created.
+
+----------------------------------
+
+43. How is a disk partitioned and formatted on a server?
+
+----------------------------------
+
+44. What are some of the file systems that can be used while formatting a disk partition on a server?
+
+FAT
+NTFS
+
+----------------------------------
+
+45. Describe the purpose of a primary, a secondary and an extended partition.
+
+Disk drive can contain a maximum of four primary partitions or three primary partitions and a single extended partition.
+Only a single extended partition can be contained in a hard disk.
+But the extended partition could be subdivided in to several partitions called logical partitions.
+Extended partition acts as a container for logical partitions.
+
+----------------------------------
+
+46. Can disk quote be allocated on a server for each user? - Yes
+
+Disk quotas track and control disk space usage for NTFS volumes, allowing administrators to control the amount of data that each user can store on a specific NTFS volume.
+
+----------------------------------
+
+Section 2: Web Server IIS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+47. Study the procedure that was used for installing IIS on the Windows 2012 OS.
+
+Server Manage - > Add role and features -> Role based or feature based installation -> IIS -> Install
+
+----------------------------------
+
+48. What is meant by a role of a server?
+
+Windows Server 2008 is designed around certain roles and features.
+A role is a primary duty that a server performs.
+For example, you typically would point at a server and say "that's my domain controller (DC) and DNS server."
+A feature is something that helps a server perform its primary duty (Windows Backup, network load balancing).
+Certain roles are comprised of sub-elements called Role Services, which are distinct units of functionality.
+For example, within the role of Terminal Services, is the TS Gateway and TS Licensing Role Services (among others)
+
+----------------------------------
+
+49. What is meant by role services?
+
+----------------------------------
+
+50. Name some of the role services that are related to IIS.
+
+----------------------------------
