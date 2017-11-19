@@ -427,3 +427,216 @@ For example, within the role of Terminal Services, is the TS Gateway and TS Lice
 50. Name some of the role services that are related to IIS.
 
 ----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Section 6: DNS Server
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Section 6: DNS Server
+
+143. Is it important to configure a DNS server using a static IP address?
+
+Yes
+
+----------------------------------
+
+144. Is it necessary to implement Active Directory before installing the DNS server?
+
+No
+
+----------------------------------
+
+145. Explain the term forward lookup zones in relation to a DNS server.
+
+Domain Name -> IP Address
+
+----------------------------------
+
+146. Explain the term Backward lookup zone in relation to a DNS server.
+
+IP Address -> Domain Name
+
+----------------------------------
+
+147. How can a client dynamically update its DNS record in a DNS server?
+
+https://www.youtube.com/watch?v=GajXpSwiPf8
+
+On Server
+DNS + DHCP
+DNS Manager -> Forward Lookup -> Properties -> General -> Dynamic Update -> Secure Only
+DHCP -> IPv4 -> Properties -> DNS -> Enable DNS dynamic updates according to the settings below -> Always dynamically update DNS PTR and A records.
+
+----------------------------------
+
+148. Explain the term “A record”. What is the composition of an “A record”?
+
+The record A specifies IP address (IPv4) for given host.
+A records are used for conversion of domain names to corresponding IP addresses.
+
+➜  ~  nslookup -query=A yahoo.com
+Server:		192.168.1.1
+Address:	192.168.1.1#53
+
+Non-authoritative answer:
+Name:	yahoo.com
+Address: 98.139.180.180
+Name:	yahoo.com
+Address: 98.138.252.38
+Name:	yahoo.com
+Address: 206.190.39.42
+
+➜  ~
+
+----------------------------------
+
+149. Explain the term “MX Record”. What is the composition of a “MX Record”?
+
+The MX resource record specifies a mail exchange server for a DNS domain name.
+The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts.
+Typically, there are more than one mail exchange server for a DNS domain and each of them have set priority.
+
+➜  ~  nslookup -query=mx yahoo.com
+Server:		192.168.1.1
+Address:	192.168.1.1#53
+
+Non-authoritative answer:
+yahoo.com	mail exchanger = 1 mta7.am0.yahoodns.net.
+yahoo.com	mail exchanger = 1 mta5.am0.yahoodns.net.
+yahoo.com	mail exchanger = 1 mta6.am0.yahoodns.net.
+
+Authoritative answers can be found from:
+mta6.am0.yahoodns.net	internet address = 66.218.85.139
+mta6.am0.yahoodns.net	internet address = 66.218.85.52
+mta6.am0.yahoodns.net	internet address = 66.196.118.37
+mta6.am0.yahoodns.net	internet address = 98.138.112.32
+mta6.am0.yahoodns.net	internet address = 98.138.112.37
+mta6.am0.yahoodns.net	internet address = 98.136.217.203
+mta6.am0.yahoodns.net	internet address = 74.6.137.63
+mta6.am0.yahoodns.net	internet address = 63.250.192.46
+
+➜  ~
+
+----------------------------------
+
+150. What information does these two records contain in a DNS server? For example, the MX record contains information relating to the mail server on the network.
+
+The record A specifies IP address (IPv4) for given host.
+A records are used for conversion of domain names to corresponding IP addresses.
+
+The MX resource record specifies a mail exchange server for a DNS domain name.
+The information is used by Simple Mail Transfer Protocol (SMTP) to route emails to proper hosts.
+Typically, there are more than one mail exchange server for a DNS domain and each of them have set priority.
+
+----------------------------------
+
+151. What is meant by the term Scavenging?
+
+Scavenging is a feature that allows the cleanup and removal of stale resource records in DNS zones.
+A stale resource record will be removed only if scavenging is enabled on:
+- The resource record
+- The DNS zone where the resource record exist
+- At least one DNS hosting a primary copy of the DNS zone where the resource record exist
+
+Scavenging occurs on recurring interval when enabled on a DNS server.
+A stale resource record can then still exist until the next cycle of DNS scavenging.
+
+----------------------------------
+
+152. Is it necessary to configure a DNS server using a static IP address?
+
+Yes
+
+----------------------------------
+
+153. What is meant by a forward lookup zone?
+
+Domain Name -> IP Address
+
+----------------------------------
+
+154. What is meant by a backward lookup zone?
+
+IP Address -> Domain Name
+
+----------------------------------
+
+155. How is a DNS host record created?
+
+DNS Manager -> Forward Lookup -> New Host(A) -> Name, IP
+
+https://www.youtube.com/watch?v=Z2qT_ttPKi4
+Host Record = A Record
+
+----------------------------------
+
+156. What is meant by Scavenging?
+
+Scavenging is a feature that allows the cleanup and removal of stale resource records in DNS zones.
+A stale resource record will be removed only if scavenging is enabled on:
+- The resource record
+- The DNS zone where the resource record exist
+- At least one DNS hosting a primary copy of the DNS zone where the resource record exist
+
+Scavenging occurs on recurring interval when enabled on a DNS server.
+A stale resource record can then still exist until the next cycle of DNS scavenging.
+
+----------------------------------
