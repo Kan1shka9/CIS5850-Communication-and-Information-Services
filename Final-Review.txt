@@ -422,11 +422,22 @@ For example, within the role of Terminal Services, is the TS Gateway and TS Lice
 
 49. What is meant by role services?
 
+Services provided by roles
+
 ----------------------------------
 
 50. Name some of the role services that are related to IIS.
 
 Windows Authentication
+Compression
+Default document
+Directory browsing
+Error pages
+HTTP redirect
+HTTP Response
+Logging
+MIME types
+WebDav Authoring
 
 ----------------------------------
 
@@ -584,7 +595,7 @@ Host: developer.cdn.mozilla.net
 
 ----------------------------------
 
-66. Is it Possible to run multiple websites using different host headers?
+66. Is it possible to run multiple websites using different host headers?
 
 Yes
 
@@ -692,10 +703,151 @@ Logging is the act of keeping a log. In the simplest case, messages are written 
 80. Name some protocols/procedures/processes that relate to providing access to a web server.
 An example in this case would be the https access or the SSL access that can be given to a web server.
 
-
+Configuring SSL with IIS
+https://www.youtube.com/watch?v=UCgpxct9eLQ
 
 ----------------------------------
 
+Section 3: FTP server
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+81. How is a FTP server installed and configured?
+
+----------------------------------
+
+82. What is meant by a home directory in a FTP site?
+
+C:\inetpub\ftproot
+
+----------------------------------
+
+83. What are the different types of accesses that can be given to a FTP site?
+
+FTP is built on a client-server model architecture and uses separate control and data connections between the client and the server.
+FTP users may authenticate themselves with a clear-text sign-in protocol, normally in the form of a username and password, but can connect anonymously if the server is configured to allow it.
+For secure transmission that protects the username and password, and encrypts the content, FTP is often secured with SSL/TLS (FTPS).
+SSH File Transfer Protocol (SFTP) is sometimes also used instead, but is technologically different.
+
+----------------------------------
+
+84. Name a few client software available for facilitating and managing access to a FTP site.
+Note that access to a FTP site can be initiated using command line commands as well.
+
+ftp <hostname/IP>
+
+Filezilla
+
+----------------------------------
+
+85. Is it possible to interact with a FTP site using commands?
+In this case, what are the different types of commands that can be used for accessing a FTP site?
+
+ftp <hostname/IP>
+
+FTP Commands:
+
+!               delete          literal         prompt          send
+?               debug           ls              put             status
+append          dir             mdelete         pwd             trace
+ascii           disconnect      mdir            quit            type
+bell            get             mget            quote           user
+binary          glob            mkdir           recv            verbose
+bye             hash            mls             remotehelp
+cd              help            mput            rename
+close           lcd             open            rmdir
+
+----------------------------------
+
+86. There are two different groups of commands that can be used for accessing a FTP site.
+One is known as the UNIX commands and the other is known as the MS-DOS commands.
+What is the difference between the two set of commands?
+
+----------------------------------
+
+87. Can a FTP site be used in conjunction with a website for managing the website?
+
+Yes
+
+----------------------------------
+
+88. Can a FTP site be configured to display a banner while initially connecting to a FTP site and to display a good bye message after ending a session with the FTP site?
+
+Yes
+
+----------------------------------
+
+89. Once again, study the different types of access privileges that can be given to access a FTP site.
+Examples include Read only access, Write only access etc.
+
+Give write privileges to the FTP site
+Give privileges to the user to upload files to the FTP server.
+
+----------------------------------
+
+90. Is it possible to limit access to a FTP site based on IP addresses, usernames etc.?
+
+Yes
+
+----------------------------------
+
+91. What are the default port numbers for the FTP Protocol?
+
+The FTP protocol uses a pair of connections between the FTP client and FTP server.
+The connection with the FTP server's port 20 is the second connection created during an FTP session, the first one being to the server's port 21.
+
+----------------------------------
+
+92. Can multiple FTP sites be created on a single server? If so, how are they created?
+
+Yes
+
+----------------------------------
+
+93. What are the different ways in which a FTP site could be created? An example would be the creation of a FTP site using the FTP wizard.
+
+IIS Manager -> Sites -> Add FTP Site
+
+----------------------------------
+
+94. What is meant by directory listing or directory browsing? How is it enabled in FTP?
+
+<FTP Name> -> FTP Directory Browsing
+
+----------------------------------
+
+95. What are the different types of commands that can be used for browsing the FTP site or the FTP directory?
+
+MS-DOS
+Unix
+
+----------------------------------
+
+96. How is the FTP site permission given to the home directory or what are the different types of permissions that can be given to a FTP site?
+An example would be the Read permission.
+
+read
+write
+
+----------------------------------
+
+97. What are the different ways of handling a request for access to a FTP site?
+For example, a request to access a FTP site can be directed to another FTP site on another computer or it can be directed to a URL.
+
+Filezilla
+
+In CMD
+ftp <Hostname/IP>
+
+In browser
+ftp://<Hostname/IP>
+
+----------------------------------
+
+98. Explain the different types of access privileges that could be given to access a FTP site.
+Examples include Read permission, Read and Write permission etc.
+
+----------------------------------
 
 
 
