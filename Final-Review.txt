@@ -995,7 +995,8 @@ mta6.am0.yahoodns.net	internet address = 63.250.192.46
 
 ----------------------------------
 
-150. What information does these two records contain in a DNS server? For example, the MX record contains information relating to the mail server on the network.
+150. What information does these two records contain in a DNS server?
+For example, the MX record contains information relating to the mail server on the network.
 
 The record A specifies IP address (IPv4) for given host.
 A records are used for conversion of domain names to corresponding IP addresses.
