@@ -617,8 +617,84 @@ cmd -> ftp <IP Address> -> anonymous login
 
 ----------------------------------
 
+71. What is meant by a virtual web directory?
+
+https://msdn.microsoft.com/en-us/library/bb763173.aspx
+
+https://www.youtube.com/watch?v=lx7gAqloikE
+
+ A virtual directory appears to client browsers as if it is in the Web server's root directory, even though it can physically reside somewhere else.
+ This approach enables you to publish Web content that is not located under the root folder of the Web server, such as content that is located on a remote computer.
+ It is also a convenient way to set up a site for local Web development work because it does not require a unique Web site for each virtual directory.
+
+----------------------------------
+
+72. How is a virtual web directory created?
+
+https://www.youtube.com/watch?v=lx7gAqloikE
+
+IIS Manager -> Sites -> <site name> -> Add virtual directory
+
+----------------------------------
+
+73. Give some examples of parameters used in binding a website to the parameters.
+
+Parameters : IP Address, Port and Host Name
+
+Same IP, Same Port, Different Hostname
+Same IP, Different Port, Same Hostname
+Different IP, Same Port, Same Hostname
+
+----------------------------------
+
+74. Can the number of connections to a website be limited? This question applies to the number of simultaneous users to a website.
+
+Yes
+
+maxConnections - Default - 4294967295
+
+https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/sitedefaults/limits
+
+----------------------------------
+
+75. What are the other parameters that can be used for limiting access to a website?
+
+----------------------------------
+
+76. What is meant by directory browsing?
+
+The <directoryBrowse> element can contain two attributes.
+The enabled attribute determines whether directory browsing is enabled for the site, application, or directory.
+The showFlags attribute defines the information about each file in the directory that Internet Information Services (IIS) will display.
+
+----------------------------------
+
+77. How is directory browsing implemented in the case of a web site? What does it entail?
+
+IIS Manager -> site -> Directory Browsing -> Enable
+
+----------------------------------
+
+78. What is meant by a log file?
+
+A log file is a file that records either events that occur in an operating system or other software runs, or messages between different users of a communication software.
+Logging is the act of keeping a log. In the simplest case, messages are written to a single log file.
+
+----------------------------------
+
+79. Describe the information that is usually stored in a log file.
+
+A log file is a file that records either events that occur in an operating system or other software runs, or messages between different users of a communication software.
+Logging is the act of keeping a log. In the simplest case, messages are written to a single log file.
+
+----------------------------------
+
+80. Name some protocols/procedures/processes that relate to providing access to a web server.
+An example in this case would be the https access or the SSL access that can be given to a web server.
 
 
+
+----------------------------------
 
 
 
