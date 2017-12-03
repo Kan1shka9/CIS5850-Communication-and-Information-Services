@@ -401,11 +401,13 @@ Disk quotas track and control disk space usage for NTFS volumes, allowing admini
 
 Section 2: Web Server IIS
 
+C:\inetpub\wwwroot
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 47. Study the procedure that was used for installing IIS on the Windows 2012 OS.
 
-Server Manage - > Add role and features -> Role based or feature based installation -> IIS -> Install
+Server Manage -> Add role and features -> Role based or feature based installation -> IIS -> Install
 
 ----------------------------------
 
@@ -428,6 +430,33 @@ For example, within the role of Terminal Services, is the TS Gateway and TS Lice
 
 ----------------------------------
 
+51. Describe the purpose of installing the Windows authentication feature in the case of the web server.
+
+The <windowsAuthentication> element defines configuration settings for the Internet Information Services (IIS) 7 Windows authentication module.
+You can use Windows authentication when your IIS 7 server runs on a corporate network that is using Microsoft Active Directory service domain identities or other Windows accounts to identify users.
+Because of this, you can use Windows authentication whether or not your server is a member of an Active Directory domain.
+
+https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/authentication/windowsauthentication/
+
+----------------------------------
+
+52. What is the default port number for web services?
+
+80
+
+----------------------------------
+
+53. Study the different ways in which a web site can be hosted on a web server. Examples include binding the site to different port numbers etc.
+
+Parameters : IP Address, Port and Host Name
+
+Same IP, Same Port, Different Hostname
+Same IP, Different Port, Same Hostname
+Different Ip, Same Port, Same Hostname
+
+----------------------------------
+
+54. Can multiple websites be hosted on a single web server? If so, what are some of the options that are available for hosting multiple websites?
 
 
 
