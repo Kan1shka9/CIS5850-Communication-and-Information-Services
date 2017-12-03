@@ -401,8 +401,6 @@ Disk quotas track and control disk space usage for NTFS volumes, allowing admini
 
 Section 2: Web Server IIS
 
-C:\inetpub\wwwroot
-
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 47. Study the procedure that was used for installing IIS on the Windows 2012 OS.
@@ -428,6 +426,8 @@ For example, within the role of Terminal Services, is the TS Gateway and TS Lice
 
 50. Name some of the role services that are related to IIS.
 
+Windows Authentication
+
 ----------------------------------
 
 51. Describe the purpose of installing the Windows authentication feature in the case of the web server.
@@ -452,11 +452,170 @@ Parameters : IP Address, Port and Host Name
 
 Same IP, Same Port, Different Hostname
 Same IP, Different Port, Same Hostname
-Different Ip, Same Port, Same Hostname
+Different IP, Same Port, Same Hostname
 
 ----------------------------------
 
 54. Can multiple websites be hosted on a single web server? If so, what are some of the options that are available for hosting multiple websites?
+
+Parameters : IP Address, Port and Host Name
+
+----------------------------------
+
+55. What is meant by anonymous access to a web site?
+
+Anyone can access the web site. No need for authentication.
+
+----------------------------------
+
+56. What is meant by authenticated access to a web site?
+
+User based authentication required for the web site.
+
+Steps:
+Add windows authentication role
+Create a new user
+Edit permission for the website -> Provide the user with access to the website
+
+----------------------------------
+
+57. How can the access to a web site be restricted?
+
+Enable authenticated access
+
+Steps:
+Add windows authentication role
+Create a new user
+Edit permission for the website -> Provide the user with access to the website
+
+----------------------------------
+
+58. Explain the term Uniform Naming Convention (UNC). Provide a sample use of UNC.
+
+Specifies a common syntax to describe the location of a network resource, such as a shared file, directory, or printer.
+
+The UNC syntax for Windows systems has the generic form:
+
+\\ComputerName\SharedFolder\Resource
+\\HostName[@SSL][@Port]\SharedFolder\Resource
+\\?\UNC\ComputerName\SharedFolder\Resource
+
+----------------------------------
+
+59. What are the different types of accesses that can be given to a web site?
+In this case, differentiate between read access, write access, directory redirect access etc.
+
+----------------------------------
+
+60. Study the procedure for opening a port on a Windows firewall.
+
+https://www.youtube.com/watch?v=2AcqibSJ8ng
+
+----------------------------------
+
+61. Name some file formats for a home page. Examples include default.html, index.html etc.
+
+index.html
+index.htm
+index.shtml
+index.php
+index.php5
+index.php4
+index.php3
+index.cgi
+default.html
+default.htm
+home.html
+home.htm
+Index.html
+Index.htm
+Index.shtml
+Index.php
+Index.cgi
+Default.html
+Default.htm
+Home.html
+Home.htm
+placeholder.html
+
+----------------------------------
+
+62. What is meant by a home directory of a website?
+After setting up a website on a web server, what are the options that are available for testing a website?
+
+C:\inetpub\wwwroot\<website home directory>
+
+Browser the website in the browser
+
+----------------------------------
+
+63. How do we stop and start a website?
+
+IIS Service Manager -> Manage Website -> Start/Stop/Restart
+
+----------------------------------
+
+64. Is it possible to customize the error display? Use Error 404 to as an example to illustrate an answer.
+
+Yes
+
+4xx Client errors
+5xx Server errors
+
+Error 404 - Not Found
+
+C:\inetpub\custerr\en-US
+
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_errors
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_errors
+
+----------------------------------
+
+65. What is meant by a Host header?
+
+IP
+Port
+Host
+
+A host header is a third piece of information that you can use in addition to the IP address and port number to uniquely identify a Web domain or, as Microsoft calls it, an application server.
+For example, the host header name for the URL http://www.ideva.com is www.ideva.com.
+
+Host: developer.cdn.mozilla.net
+
+----------------------------------
+
+66. Is it Possible to run multiple websites using different host headers?
+
+Yes
+
+----------------------------------
+
+67. What is the role played by a DNS server when host headers are used in accessing a website?
+
+Websites with different hostnames are mapped to different IP addresses.
+So DNS will do a different lookup for each domain which is mapped to a different IP.
+
+----------------------------------
+
+68. What is the purpose of an FTP server?
+
+The File Transfer Protocol (FTP) is the standard network protocol used for the transfer of computer files between a client and server on a computer network.
+
+----------------------------------
+
+69. Describe the procedure for installing a FTP server on a Windows server 2012.
+
+FTP Publishing Services -> FTP Server, FTP Management Console
+
+----------------------------------
+
+70. What are the different ways in which access to a FTP site be provided?
+An example in this case would be to redirect the access to another FTP site on another FTP server.
+
+Filezilla
+cmd -> ftp <IP Address> -> anonymous login
+
+----------------------------------
 
 
 
