@@ -769,6 +769,8 @@ What is the difference between the two set of commands?
 
 Yes
 
+IIS Manager -> Sites -> <mysite> -> Add FTP Publishing
+
 ----------------------------------
 
 88. Can a FTP site be configured to display a banner while initially connecting to a FTP site and to display a good bye message after ending a session with the FTP site?
