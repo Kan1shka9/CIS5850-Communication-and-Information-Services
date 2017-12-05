@@ -859,7 +859,7 @@ Section 5: DHCP Server
 
 124. How is a DHCP server installed and activated? In this case, refer to the DHCP server on a windows 2012 server.
 
-Server Manager -> Add role -> DHCP
+Server Manager -> Add role -> DHCP -> Network Connection Binding -> IPv4 DNS Settings -> DHCP Scope -> Finish
 
 ----------------------------------
 
@@ -929,7 +929,7 @@ Start -> Administrative Tools -> DHCP -> IPv4 -> Right click -> Activate
 
 134. How is a DHCP server installed on a windows 2012 server?
 
-Server Manager -> Add role -> DHCP
+Server Manager -> Add role -> DHCP -> Network Connection Binding -> IPv4 DNS Settings -> DHCP Scope -> Finish
 
 ----------------------------------
 
