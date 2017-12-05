@@ -968,6 +968,8 @@ Server Manager -> DHCP Server -> IPv4 -> Scope -> Reservations -> New Reservatio
 
 140. How is a subnet mark specified when configuring a DHCP server? Can it be specified using the number of binary digits that need to be set to a valued of 1?
 
+Yes
+
 ----------------------------------
 
 141. Can s DHCP be installed or be implemented in Software?
