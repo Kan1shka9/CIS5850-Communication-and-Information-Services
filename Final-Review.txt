@@ -853,12 +853,116 @@ Examples include Read permission, Read and Write permission etc.
 
 ----------------------------------
 
+Section 5: DHCP Server
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+124. How is a DHCP server installed and activated? In this case, refer to the DHCP server on a windows 2012 server.
+
+Server Manager -> Add role -> DHCP
+
+----------------------------------
+
+125. Should a DHCP server be authorized to deliver the IP address under the Active Directory?
+
+Yes
+
+If the DHCP server is not authorized, it will not lease IP addresses to DHCP clients.
+
+----------------------------------
+
+126. Explain some of the different tasks performs by a DHCP server.
+
+DHCP is a network protocol used to assign IP addresses and provide configuration information to devices such as servers, desktops, or mobile devices, so they can communicate on a network using the Internet Protocol (IP)
+
+----------------------------------
+
+127. What is meant by the scope of IP addresses?
+
+A scope is an administrative grouping of IP addresses for computers on a subnet that use the Dynamic Host Configuration Protocol (DHCP) service.
+
+----------------------------------
+
+128. Can some IP address be excluded from the scope?
+
+Yes
+
+----------------------------------
+
+129. How are leased given to different types of clients?
+For example, a laptop client or a tablet client that is connected to a network for a short duration may be issued a lease for a short duration of time.
+
+When a scope is created, the lease duration is set to eight days by default.
+However, there are situations when the administrator might want to change the lease duration.
+
+An organization has a large number of IP addresses available and client configurations rarely change.
+The administrator increases the lease duration to reduce the frequency of lease renewal exchanges between clients and the DHCP server.
+Because the DHCP clients are renewing their leases less frequently, DHCP-related network traffic is reduced.
+
+An organization has a limited number of IP addresses available and client configurations change frequently or clients move often in or out of the network.
+The administrator reduces the lease duration to increase the rate at which unused addresses are returned to the available address pool for reassignment.
+
+----------------------------------
+
+130. Can a DHCP server be programmed to issue a predetermined IP address to a particular client computer on the network?
+
+Yes
+
+----------------------------------
+
+131. What are the different ways in which a DHCP server can be implemented?
+An example in this case is the implementation of a DHCP server in a hardware such as an Access Point or in software such as the Windows 2012 Server operating system?
+
+----------------------------------
+
+132. Note that once a DHCP server is installed in a Windows 2012 Server, it needs to be activated to issue the IP addresses.
+
+----------------------------------
+
+133. What is the procedure for activating a DHCP server so that it may start issuing dynamic IP addressed to the clients?
+
+https://technet.microsoft.com/en-us/library/dd894431(v=ws.10).aspx
+
+Start -> Administrative Tools -> DHCP -> IPv4 -> Right click -> Activate
+
+----------------------------------
+
+134. How is a DHCP server installed on a windows 2012 server?
+
+Server Manager -> Add role -> DHCP
+
+----------------------------------
+
+135. What are the different types of TCP/IP parameters that a DHCP server can issue to a client?
+
+Dynamic allocation, Automatic allocation, Manual allocation (commonly called static allocation)
+
+----------------------------------
+
+136. What is meant by a scope?
+
+A scope is an administrative grouping of IP addresses for computers on a subnet that use the Dynamic Host Configuration Protocol (DHCP) service.
+
+----------------------------------
+
+137. What is meant by an exclusion list?
+
+One or more IP addresses within a DHCP scope that are not allocated by the DHCP Server service.
+Exclusions ensure that the specified IP addresses will not be offered to clients by the DHCP server as part of the general address pool.
+
+----------------------------------
+
+138. What is a lease duration?
+
+The length of time for which a DHCP client can use a DHCP-assigned IP address configuration.
+
+----------------------------------
+
+139. How is security enforced when issuing an IP address to a computer? In the case, explain the use of MAC addresses to restrict access to a network.
 
 
 
-
-
-
+----------------------------------
 
 
 
