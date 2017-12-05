@@ -960,55 +960,26 @@ The length of time for which a DHCP client can use a DHCP-assigned IP address co
 
 139. How is security enforced when issuing an IP address to a computer? In the case, explain the use of MAC addresses to restrict access to a network.
 
-
+Server Manager -> DHCP Server -> IPv4 -> Scope -> Reservations -> New Reservations
 
 ----------------------------------
 
+140. How is a subnet mark specified when configuring a DHCP server? Can it be specified using the number of binary digits that need to be set to a valued of 1?
 
+----------------------------------
 
+141. Can s DHCP be installed or be implemented in Software?
 
+Yes
 
+----------------------------------
 
+142. Give an example of a hardware that is also a DHCP server?
 
+Access point
+Modem
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+----------------------------------
 
 Section 6: DNS Server
 
