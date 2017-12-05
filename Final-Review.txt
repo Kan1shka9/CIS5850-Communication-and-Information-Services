@@ -558,7 +558,7 @@ After setting up a website on a web server, what are the options that are availa
 
 C:\inetpub\wwwroot\<website home directory>
 
-Browser the website in the browser
+Browse the website in the browser
 
 ----------------------------------
 
@@ -671,6 +671,8 @@ https://docs.microsoft.com/en-us/iis/configuration/system.applicationhost/sites/
 ----------------------------------
 
 75. What are the other parameters that can be used for limiting access to a website?
+
+Connection time, Bandwidth
 
 ----------------------------------
 
