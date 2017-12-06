@@ -937,6 +937,11 @@ Server Manager -> Add role -> DHCP -> Network Connection Binding -> IPv4 DNS Set
 
 135. What are the different types of TCP/IP parameters that a DHCP server can issue to a client?
 
+IP address
+Subnet Mask
+Gateway
+DNS Address
+
 Dynamic allocation, Automatic allocation, Manual allocation (commonly called static allocation)
 
 ----------------------------------
@@ -988,8 +993,6 @@ Modem
 Section 6: DNS Server
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Section 6: DNS Server
 
 143. Is it important to configure a DNS server using a static IP address?
 
